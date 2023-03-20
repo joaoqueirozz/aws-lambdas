@@ -1,0 +1,13 @@
+{
+  "resourceType": "coverage",
+  "id": 1110,
+  "connection": {
+    "host": "aqr-sami-rds.cluster-ctxsv2axpjoj.us-east-1.rds.amazonaws.com",
+    "port": 5432,
+    "database": "sami_aqr_db",
+    "user": "root",
+    "password": "tiVuqe3*FudrLSofeN$="
+  },
+  "schema": "datawarehouse_hml",    
+  "env": "hml"
+}

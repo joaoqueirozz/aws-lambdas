@@ -1,0 +1,23 @@
+{
+    "Records": [
+        {
+            "messageId": "1721957d-d2d0-4c19-8547-60eb5fa9241b",
+            "receiptHandle": "AQEBskco6R6h6WovQ4uH2FtY4gQDQYgx4PmIJabtyJ6kC/EVzm/wZn9hrBKIGWselnJIMtv9x/HpF/fz1zZnkBDYHNg40sq7MGDfZiR+5dpM7iC2tVvVQjrnXSgMdIv8R+uBuDcwaNzffGTi470vn95j82UKOwZIh6r6k5qbjgsah86ocEIUwaDWa1u4jLACVuh7iRbsp85izoIAO41Vlh3qxF12YklhxupbejpmS+WOURc4LfjeDXNaR0LdzmZygFyznSyQJf9mfKXOGCErw7lrlQ==",
+            "body": "{\"env\":\"dev\",\"resourceType\":\"GroupSite\",\"data\":{\"CD_PRESTADOR\":2,\"CD_PLANO\":4,\"CD_PRESTADOR_ENDERECO\":3},\"messageId\":\"message-GroupSite-dev-1623676455316\",\"groupId\":\"group-GroupSite-dev\"}",
+            "attributes": {
+                "ApproximateReceiveCount": "1",
+                "SentTimestamp": "1623676455547",
+                "SequenceNumber": "18862405246329583872",
+                "MessageGroupId": "group-GroupSite-dev",
+                "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+                "MessageDeduplicationId": "message-GroupSite-dev-1623676455316",
+                "ApproximateFirstReceiveTimestamp": "1623676455547"
+            },
+            "messageAttributes": {},
+            "md5OfBody": "a6c006343c24e58ccf88a0dce2d49827",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_mv.fifo",
+            "awsRegion": "us-east-1"
+        }
+    ]
+}

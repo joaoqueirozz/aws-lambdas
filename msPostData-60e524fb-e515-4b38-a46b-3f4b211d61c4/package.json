@@ -1,0 +1,17 @@
+{
+  "name": "msCreateMedicalInfo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "sam_dev": "sam local invoke -e test/event_dev.json",
+    "sam_hml": "sam local invoke -e test/event_hml.json",
+    "sam_dprd": "sam local invoke -e test/event_prd.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

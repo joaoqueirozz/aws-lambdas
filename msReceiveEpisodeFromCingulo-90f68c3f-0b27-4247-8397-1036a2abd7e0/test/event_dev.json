@@ -1,0 +1,12 @@
+{
+    "env": "prd",
+    "db_schema": "datawarehouse",
+    "token": "Bearer 35f7bfb8f19140b55c09ee8d5896f9685f0f870feb8124d0",
+    "payload": {
+        "event": "benefit_activation",
+        "date_time": "2022-06-28 17:57:51.965877-03:00",
+        "id1": "35333966818",
+        "id2": "Vivian",
+        "parameters": {}
+    }
+}

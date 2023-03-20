@@ -1,0 +1,55 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msExportAuthorizationToCingulo
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Code:
+        S3Bucket: sami-fhir-omop
+        S3Key: >-
+          serverless/msExportAuthorizationToCingulo/dev/1653397308397-2022-05-24T13:01:48.397Z/msExportAuthorizationToCingulo.zip
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msExportAuthorizationToCingulo
+      MemorySize: 2048
+      Timeout: 120
+      Description: Microservi?o retorna um bundle com dados de um atendimento
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:70'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:got:1'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:uuid:1'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:pgknex:4'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:excel4node:5'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersion2hQ8kT6PtF39BQs9WX7A8WktOAXkUGpweVXdMt2J1Q:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: gogj5ApYexvVf2S9L9i0yzgqR06Q2An7LZHiVUXS4eQ=
+      Description: Microservi?o retorna um bundle com dados de um atendimento
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+    Export:
+      Name: sls-msExportAuthorizationToCingulo-dev-ServerlessDeploymentBucketName
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersion2hQ8kT6PtF39BQs9WX7A8WktOAXkUGpweVXdMt2J1Q
+    Export:
+      Name: sls-msExportAuthorizationToCingulo-dev-FuncLambdaFunctionQualifiedArn

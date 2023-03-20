@@ -1,0 +1,51 @@
+{
+    "env": "prd",
+    "dw_schema": "datawarehouse",
+    "db_schema": "gympass",
+    "base_url": "https://jyeqj690h3.execute-api.us-east-1.amazonaws.com/production",
+    "payload": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [{
+            "fullUrl": "urn:uuid:c9cd676c-d5a9-40f4-a522-23724a973ee4",
+            "request": {
+                "method": "GET",
+                "url": "Patient?identifier=./NamingSystem/cpf/22384431854"
+            }
+        }, {
+            "fullUrl": "urn:uuid:e072b3d4-82e3-42f8-9a20-89350948ffc2",
+            "resource": {
+                "resourceType": "Appointment",
+                "participant": [{
+                        "actor": {
+                            "reference": "Patient/0",
+                            "type": "Patient"
+                        },
+                        "status": "accepted"
+                }],
+                "serviceCategory": [{
+                    "coding": [
+                        {
+                            "system": "./ValueSet/gympass-plans",
+                            "code": "Basic I"
+                        }
+                    ]
+                }],
+                "serviceType": [{
+                    "coding": [
+                        {
+                            "system": "./ValueSet/gympass-service-types",
+                            "code": "Futebol"
+                        }
+                    ]
+                }],
+                "created": "2020-12-15T16:28:02.788Z",
+                "minutesDuration": "30"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Appointment"
+            }
+        }]
+    }
+}

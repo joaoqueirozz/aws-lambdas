@@ -1,0 +1,41 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/bsUpdateMessageHistory
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Code:
+        S3Bucket: sami-fhir-omop
+        S3Key: >-
+          serverless/bsUpdateMessageHistory/dev/1620229229955-2021-05-05T15:40:29.955Z/bsUpdateMessageHistory.zip
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: bsUpdateMessageHistory
+      MemorySize: 128
+      Timeout: 60
+      Description: Microservi?o que atualiza o hist?rico de altera??es no DynamoDB
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-sqs-role'
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:47'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionINkte30Jj6XswHPqK3DJLSH0vbdn4s21eghGB7Ma0U:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: i2NTtLmqMwDSUcT1LI4cwvgr+o7m4IKm3bDjw5vfe18=
+      Description: Microservi?o que atualiza o hist?rico de altera??es no DynamoDB
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionINkte30Jj6XswHPqK3DJLSH0vbdn4s21eghGB7Ma0U

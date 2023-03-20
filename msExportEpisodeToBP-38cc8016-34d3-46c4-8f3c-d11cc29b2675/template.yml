@@ -1,0 +1,50 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msExportEpisodeToBP
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msExportEpisodeToBP
+      MemorySize: 2048
+      Timeout: 900
+      Description: Microservi?o retorna um bundle com dados de um atendimento
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:66'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:got:1'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:pgknex:2'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:uuid:1'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionzas8RNIkk3igYAcT4A5atfpdQ2pnF4N1ak9z0GoGZA:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: VK8T1LVB4v05x/rjnoTyBaTS0gFYHeL+Dvsys3PILpQ=
+      Description: Microservi?o retorna um bundle com dados de um atendimento
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+    Export:
+      Name: sls-msExportEpisodeToBP-dev-ServerlessDeploymentBucketName
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionzas8RNIkk3igYAcT4A5atfpdQ2pnF4N1ak9z0GoGZA
+    Export:
+      Name: sls-msExportEpisodeToBP-dev-FuncLambdaFunctionQualifiedArn

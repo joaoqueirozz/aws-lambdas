@@ -1,0 +1,18 @@
+{
+  "Records": [
+    {
+      "body": {
+        "env": "dev",
+        "base_url": "https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir",
+        "resourceType": "Coverage",
+        "id": "2484",
+        "messageId": "message-organization-1262-1616442717525",
+        "groupId": "Coverage-dev",
+        "type": null,
+        "schema": "datawarehouse_dev",
+        "modified": "2021-03-22T19:51:57.525Z",
+        "methodType": "update"
+      }
+    }
+  ]
+}

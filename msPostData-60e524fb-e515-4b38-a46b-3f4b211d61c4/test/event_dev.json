@@ -1,0 +1,16 @@
+{
+  "entity": "life_locations",
+  "env": "dev",
+  "db_schema": "datawarehouse_dev",
+  "data": {
+    "life_id": 1948,
+    "address_1": "Rua Cayowaá, 2197",
+    "address_2": "Sumaré",
+    "city": "São Paulo",
+    "state": "SP",
+    "zip": "01258011",
+    "country": "BRASIL",
+    "latitude": "-23.5384329",
+    "longitude": "-46.6836502"
+  }
+}

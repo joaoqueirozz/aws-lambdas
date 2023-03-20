@@ -1,0 +1,118 @@
+{
+  "Records": [
+      {
+          "messageId": "aa151744-6b79-4642-938c-5ea532cb9287",
+          "receiptHandle": "AQEBqahKjsIBjq25Ie/nJoYPkm4yq9O2/dOBuaNkojVaxgDLQzl1B20g0pJgN9+Gjc9OSfM8/8MeqBPMQqNBNCn1u1yIUVKdXzEK2asl1VJufgIbGkS911x/ZfBDYlcJc2XuFS5+Bl2jUkC0CRioAUwGj9MTmrW6MYtwDFnKyNdb5uXctNOJYHUS9W948wYalPSISUcbvsrZ1jFIYxFNFnrBM9395AQlZHPCQnM8QBF24GasU6T+bCC8b58ceimZcYBrnP9bd1MQ6PzXmxazrBLJI0HnUB6LypRpTsJh8d2AUbM=",
+          "body": "{\"env\":\"dev\",\"resourceType\":\"InsurancePlan\",\"data\":{\"CD_PLANO\":1,\"CD_TIP_ACOMODACAO\":1,\"CD_TIP_PLANO\":1,\"CD_CATEGORIA\":1,\"DS_PLANO\":\"SAMI SOL\",\"SN_FATOR_MODERADOR\":\"S\",\"SN_ATIVO\":\"S\",\"CD_GRU_IMP_CAR_FEM\":1,\"CD_GRU_IMP_CAR_MASC\":2,\"CD_REGRA_REPASSE\":1,\"VL_PERCENTUAL_REPASSE\":100,\"CD_REGISTRO_MS\":487271201,\"CD_GRUPO_FAIXA_ETARIA\":2,\"NM_PROGRAMA_DA_CARTEIRA\":null,\"CD_GRUPO_FRANQUIA\":null,\"SN_REGISTRADO_ANS\":\"S\",\"TP_PERIODO_IMPLANTACAO\":\"2\",\"TP_NATUREZA_JURIDICA\":\"6\",\"TP_COBERTURA_OFERECIDA\":\"06\",\"CD_NIVEL_HIERARQUICO\":0,\"TP_ABRANGENCIA_GEOGRAFICA\":\"5\",\"SN_SIB\":\"S\",\"SN_SIP\":\"S\",\"SN_DIOPS\":\"S\",\"CD_MULTI_EMPRESA\":1,\"CD_PLANO_OPERADORA\":null,\"DS_PLANO_CARTEIRA\":null,\"SN_IMPEDIR_ADESAO\":\"N\",\"SN_RESTRITO_BENEFC_INATIVO\":\"N\",\"TP_OBRIGA_CARTEIRA_CNTR\":\"C\",\"CD_PTU_PLANO_INTERCAMBIO\":null,\"CD_GRU_RPS\":null,\"SN_MONITORAMENTO_TISS\":\"S\",\"SN_ODONTOLOGICO\":\"N\",\"CD_MODELO_CARTEIRA\":null,\"CD_REGRA_COBRANCA\":1,\"CD_USUARIO_INCLUSAO\":\"DBAPS\",\"DT_INCLUSAO\":\"2020-08-14T11:00:17.000Z\",\"SN_ENVIA_A450\":\"S\",\"CD_REDE_REFERENCIADA\":null,\"CD_PLANO_INTERNO\":null,\"SN_ADAPTADO\":\"N\",\"DT_INICIO_VIGENCIA\":\"2020-09-01T00:00:00.000Z\",\"SN_PORTAL_CORRETOR\":\"S\",\"TP_REDE_MIN\":null,\"CD_PLANO_RECIPROCIDADE\":null,\"SN_GUIA_MEDICO\":\"S\",\"CD_PLANO_MV2000\":null,\"TP_PAGAMENTO\":\"P\",\"SN_ENVIA_DMED_IR\":\"S\",\"SN_ATIVA_PARENTESCO\":\"S\",\"CD_MODELO_ADAPTACAO_PLANO\":null,\"SN_OBRIGA_DEP_MESMO_PLANO_TIT\":\"N\",\"SN_SADT_EVOLUI_PARA_INT_RATEIO\":\"N\",\"SN_OBRIGA_CHAVE_LIBERACAO\":\"N\",\"SN_REST_ACESSO_PREST_REDE\":\"N\",\"NR_CARENCIA_ACOMODACAO\":null},\"modified\":\"2021-05-20T15:11:46.288Z\",\"messageId\":\"message-InsurancePlan-dev-1621523506288\",\"groupId\":\"group-InsurancePlan-dev\"}",
+          "attributes": {
+              "ApproximateReceiveCount": "1",
+              "SentTimestamp": "1621523507895",
+              "SequenceNumber": "18861854091730672128",
+              "MessageGroupId": "group-InsurancePlan-dev",
+              "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+              "MessageDeduplicationId": "message-InsurancePlan-dev-1621523506288",
+              "ApproximateFirstReceiveTimestamp": "1621523627163"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "10b19553bb5555995c2aa51850a4795a",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_mv.fifo",
+          "awsRegion": "us-east-1"
+      },
+      {
+          "messageId": "d789aac3-4378-4e65-ada0-72a6113feb38",
+          "receiptHandle": "AQEBFqmuwG9xInvCVa86PvqexOFjFje1fETAYTFSNj+KieePCKd6GchIegHWDnj8FvGPUNyqEjTYNP+Jx9zL/NPyQzFFiRg/4WCO/KSpso8HUsEMS3EUSXnHiG0GMKUBnTSiTxko8Iv0mc6tIKamDgEkVL7fAIzfBe6/f2c4kNHma/2ESX//oWreErBkJwiyCOpCJ75EsJdBv8s4JDuXRoY3X39EsroE8LwA2+zBgMwxERJP9FBxr6Pxy8DsRrVIu5V5Zobcd1EWWLMqJSS1jYCCW0NdBA7N+r/E5Q7Ez4FpDS0=",
+          "body": "{\"env\":\"dev\",\"resourceType\":\"InsurancePlan\",\"data\":{\"CD_PLANO\":2,\"CD_TIP_ACOMODACAO\":1,\"CD_TIP_PLANO\":1,\"CD_CATEGORIA\":1,\"DS_PLANO\":\"SAMI SOL SAMERS\",\"SN_FATOR_MODERADOR\":\"S\",\"SN_ATIVO\":\"S\",\"CD_GRU_IMP_CAR_FEM\":1,\"CD_GRU_IMP_CAR_MASC\":2,\"CD_REGRA_REPASSE\":1,\"VL_PERCENTUAL_REPASSE\":100,\"CD_REGISTRO_MS\":null,\"CD_GRUPO_FAIXA_ETARIA\":2,\"NM_PROGRAMA_DA_CARTEIRA\":null,\"CD_GRUPO_FRANQUIA\":null,\"SN_REGISTRADO_ANS\":\"N\",\"TP_PERIODO_IMPLANTACAO\":\"2\",\"TP_NATUREZA_JURIDICA\":\"6\",\"TP_COBERTURA_OFERECIDA\":\"06\",\"CD_NIVEL_HIERARQUICO\":0,\"TP_ABRANGENCIA_GEOGRAFICA\":\"5\",\"SN_SIB\":\"N\",\"SN_SIP\":\"N\",\"SN_DIOPS\":\"N\",\"CD_MULTI_EMPRESA\":1,\"CD_PLANO_OPERADORA\":null,\"DS_PLANO_CARTEIRA\":null,\"SN_IMPEDIR_ADESAO\":\"N\",\"SN_RESTRITO_BENEFC_INATIVO\":\"N\",\"TP_OBRIGA_CARTEIRA_CNTR\":\"C\",\"CD_PTU_PLANO_INTERCAMBIO\":null,\"CD_GRU_RPS\":null,\"SN_MONITORAMENTO_TISS\":\"N\",\"SN_ODONTOLOGICO\":\"N\",\"CD_MODELO_CARTEIRA\":null,\"CD_REGRA_COBRANCA\":1,\"CD_USUARIO_INCLUSAO\":\"DBAMV\",\"DT_INCLUSAO\":\"2020-11-06T14:53:51.000Z\",\"SN_ENVIA_A450\":\"S\",\"CD_REDE_REFERENCIADA\":null,\"CD_PLANO_INTERNO\":null,\"SN_ADAPTADO\":\"N\",\"DT_INICIO_VIGENCIA\":\"2020-11-03T00:00:00.000Z\",\"SN_PORTAL_CORRETOR\":\"N\",\"TP_REDE_MIN\":null,\"CD_PLANO_RECIPROCIDADE\":null,\"SN_GUIA_MEDICO\":\"N\",\"CD_PLANO_MV2000\":null,\"TP_PAGAMENTO\":\"P\",\"SN_ENVIA_DMED_IR\":\"S\",\"SN_ATIVA_PARENTESCO\":\"N\",\"CD_MODELO_ADAPTACAO_PLANO\":null,\"SN_OBRIGA_DEP_MESMO_PLANO_TIT\":\"N\",\"SN_SADT_EVOLUI_PARA_INT_RATEIO\":\"N\",\"SN_OBRIGA_CHAVE_LIBERACAO\":\"N\",\"SN_REST_ACESSO_PREST_REDE\":\"N\",\"NR_CARENCIA_ACOMODACAO\":null},\"modified\":\"2021-05-20T15:11:47.055Z\",\"messageId\":\"message-InsurancePlan-dev-1621523507055\",\"groupId\":\"group-InsurancePlan-dev\"}",
+          "attributes": {
+              "ApproximateReceiveCount": "1",
+              "SentTimestamp": "1621523508997",
+              "SequenceNumber": "18861854092012784128",
+              "MessageGroupId": "group-InsurancePlan-dev",
+              "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+              "MessageDeduplicationId": "message-InsurancePlan-dev-1621523507055",
+              "ApproximateFirstReceiveTimestamp": "1621523627163"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "ebd58386e73d556a8f4e9b2e6a610d3f",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_mv.fifo",
+          "awsRegion": "us-east-1"
+      },
+      {
+          "messageId": "743512a9-6b28-4565-8a40-4c56ff81a89c",
+          "receiptHandle": "AQEBV3mw+GS7EcjWOYNV3QFIOJ9JGZzRi00UTLYUAFwFkLs+n3OerEbG2Xa1ufoR4zGBB2jjPGm+oseVwJN3CZ04qqzycIA6yspDm1ShFnV2nWzMrLPJ6o4F15Z8MaYm4g2R922sMVuddD/W6CInik3uu/+LpuYfX09hem7NuSQUHExGZf9jjDD1JaPSTNH6Jzfl9KQo3Tsjl6uhHQ7/2g5HX6LiIhXdmUkmjcpyTTA9doDYjvCQwXx2d1OhUSn5MQi9tOz5/Lut1f80+chk2DKnPLt2eZ3va3s+hCwmK297nuE=",
+          "body": "{\"env\":\"dev\",\"resourceType\":\"InsurancePlan\",\"data\":{\"CD_PLANO\":3,\"CD_TIP_ACOMODACAO\":1,\"CD_TIP_PLANO\":1,\"CD_CATEGORIA\":1,\"DS_PLANO\":\"PLANO FAKE\",\"SN_FATOR_MODERADOR\":\"S\",\"SN_ATIVO\":\"S\",\"CD_GRU_IMP_CAR_FEM\":1,\"CD_GRU_IMP_CAR_MASC\":2,\"CD_REGRA_REPASSE\":1,\"VL_PERCENTUAL_REPASSE\":100,\"CD_REGISTRO_MS\":null,\"CD_GRUPO_FAIXA_ETARIA\":2,\"NM_PROGRAMA_DA_CARTEIRA\":null,\"CD_GRUPO_FRANQUIA\":null,\"SN_REGISTRADO_ANS\":\"N\",\"TP_PERIODO_IMPLANTACAO\":\"2\",\"TP_NATUREZA_JURIDICA\":\"6\",\"TP_COBERTURA_OFERECIDA\":\"01\",\"CD_NIVEL_HIERARQUICO\":0,\"TP_ABRANGENCIA_GEOGRAFICA\":\"5\",\"SN_SIB\":\"N\",\"SN_SIP\":\"N\",\"SN_DIOPS\":\"N\",\"CD_MULTI_EMPRESA\":1,\"CD_PLANO_OPERADORA\":null,\"DS_PLANO_CARTEIRA\":\"PLANO FAKE\",\"SN_IMPEDIR_ADESAO\":\"N\",\"SN_RESTRITO_BENEFC_INATIVO\":\"N\",\"TP_OBRIGA_CARTEIRA_CNTR\":\"C\",\"CD_PTU_PLANO_INTERCAMBIO\":null,\"CD_GRU_RPS\":null,\"SN_MONITORAMENTO_TISS\":\"N\",\"SN_ODONTOLOGICO\":\"N\",\"CD_MODELO_CARTEIRA\":null,\"CD_REGRA_COBRANCA\":1,\"CD_USUARIO_INCLUSAO\":\"LUCAS.NOVAIS\",\"DT_INCLUSAO\":\"2020-12-07T09:30:01.000Z\",\"SN_ENVIA_A450\":\"S\",\"CD_REDE_REFERENCIADA\":null,\"CD_PLANO_INTERNO\":null,\"SN_ADAPTADO\":\"N\",\"DT_INICIO_VIGENCIA\":\"2020-12-01T00:00:00.000Z\",\"SN_PORTAL_CORRETOR\":\"N\",\"TP_REDE_MIN\":null,\"CD_PLANO_RECIPROCIDADE\":null,\"SN_GUIA_MEDICO\":\"N\",\"CD_PLANO_MV2000\":null,\"TP_PAGAMENTO\":null,\"SN_ENVIA_DMED_IR\":\"S\",\"SN_ATIVA_PARENTESCO\":\"N\",\"CD_MODELO_ADAPTACAO_PLANO\":null,\"SN_OBRIGA_DEP_MESMO_PLANO_TIT\":\"N\",\"SN_SADT_EVOLUI_PARA_INT_RATEIO\":\"N\",\"SN_OBRIGA_CHAVE_LIBERACAO\":\"N\",\"SN_REST_ACESSO_PREST_REDE\":\"N\",\"NR_CARENCIA_ACOMODACAO\":null},\"modified\":\"2021-05-20T15:11:48.121Z\",\"messageId\":\"message-InsurancePlan-dev-1621523508121\",\"groupId\":\"group-InsurancePlan-dev\"}",
+          "attributes": {
+              "ApproximateReceiveCount": "1",
+              "SentTimestamp": "1621523509623",
+              "SequenceNumber": "18861854092173040896",
+              "MessageGroupId": "group-InsurancePlan-dev",
+              "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+              "MessageDeduplicationId": "message-InsurancePlan-dev-1621523508121",
+              "ApproximateFirstReceiveTimestamp": "1621523627163"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "55f07eb4e4ffdc5b36de09c660af3e82",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_mv.fifo",
+          "awsRegion": "us-east-1"
+      },
+      {
+          "messageId": "ec545985-0418-47b1-85f2-c219d19b7493",
+          "receiptHandle": "AQEBr9rQgZqSwivhx26Fnxm9A54epwFBpbtaZAl+nuVzYFqB8P22LWeMwgw35+0UxvIoFd4LYRrviIy/CtJjVwS69fjJ2bwl4BajDegvbOgMOf0MVkXO6XfaPUb9XzaixJ95ulkfNRgVtWNAYMSDWC5kV7zWy9SdTwgl2ZD4WgxqivKDI3923Xvh4IW83l6MPiQL1Jj9whjUziGv2dbOs+sD3sjB2ayZuMRKTz0sVdNVQ7DgUkKZhzKTfA4RlQj5PzhfZFe6LpJqsuhhGuz8ERROJ5W/cp2+9FRcUfA5HxShGos=",
+          "body": "{\"env\":\"dev\",\"resourceType\":\"InsurancePlan\",\"data\":{\"CD_PLANO\":4,\"CD_TIP_ACOMODACAO\":7,\"CD_TIP_PLANO\":1,\"CD_CATEGORIA\":1,\"DS_PLANO\":\"SAMI SOL APTO\",\"SN_FATOR_MODERADOR\":\"S\",\"SN_ATIVO\":\"S\",\"CD_GRU_IMP_CAR_FEM\":1,\"CD_GRU_IMP_CAR_MASC\":2,\"CD_REGRA_REPASSE\":1,\"VL_PERCENTUAL_REPASSE\":100,\"CD_REGISTRO_MS\":487683201,\"CD_GRUPO_FAIXA_ETARIA\":2,\"NM_PROGRAMA_DA_CARTEIRA\":null,\"CD_GRUPO_FRANQUIA\":null,\"SN_REGISTRADO_ANS\":\"S\",\"TP_PERIODO_IMPLANTACAO\":\"2\",\"TP_NATUREZA_JURIDICA\":\"6\",\"TP_COBERTURA_OFERECIDA\":\"06\",\"CD_NIVEL_HIERARQUICO\":0,\"TP_ABRANGENCIA_GEOGRAFICA\":\"5\",\"SN_SIB\":\"S\",\"SN_SIP\":\"S\",\"SN_DIOPS\":\"S\",\"CD_MULTI_EMPRESA\":1,\"CD_PLANO_OPERADORA\":null,\"DS_PLANO_CARTEIRA\":null,\"SN_IMPEDIR_ADESAO\":\"N\",\"SN_RESTRITO_BENEFC_INATIVO\":\"N\",\"TP_OBRIGA_CARTEIRA_CNTR\":\"C\",\"CD_PTU_PLANO_INTERCAMBIO\":null,\"CD_GRU_RPS\":null,\"SN_MONITORAMENTO_TISS\":\"S\",\"SN_ODONTOLOGICO\":\"N\",\"CD_MODELO_CARTEIRA\":null,\"CD_REGRA_COBRANCA\":null,\"CD_USUARIO_INCLUSAO\":\"LUCAS.NOVAIS\",\"DT_INCLUSAO\":\"2021-01-06T11:03:40.000Z\",\"SN_ENVIA_A450\":\"S\",\"CD_REDE_REFERENCIADA\":null,\"CD_PLANO_INTERNO\":null,\"SN_ADAPTADO\":\"N\",\"DT_INICIO_VIGENCIA\":\"2021-01-11T00:00:00.000Z\",\"SN_PORTAL_CORRETOR\":\"S\",\"TP_REDE_MIN\":null,\"CD_PLANO_RECIPROCIDADE\":null,\"SN_GUIA_MEDICO\":\"S\",\"CD_PLANO_MV2000\":null,\"TP_PAGAMENTO\":\"P\",\"SN_ENVIA_DMED_IR\":\"S\",\"SN_ATIVA_PARENTESCO\":\"N\",\"CD_MODELO_ADAPTACAO_PLANO\":null,\"SN_OBRIGA_DEP_MESMO_PLANO_TIT\":\"N\",\"SN_SADT_EVOLUI_PARA_INT_RATEIO\":\"N\",\"SN_OBRIGA_CHAVE_LIBERACAO\":\"N\",\"SN_REST_ACESSO_PREST_REDE\":\"N\",\"NR_CARENCIA_ACOMODACAO\":null},\"modified\":\"2021-05-20T15:11:48.760Z\",\"messageId\":\"message-InsurancePlan-dev-1621523508760\",\"groupId\":\"group-InsurancePlan-dev\"}",
+          "attributes": {
+              "ApproximateReceiveCount": "1",
+              "SentTimestamp": "1621523510650",
+              "SequenceNumber": "18861854092435952128",
+              "MessageGroupId": "group-InsurancePlan-dev",
+              "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+              "MessageDeduplicationId": "message-InsurancePlan-dev-1621523508760",
+              "ApproximateFirstReceiveTimestamp": "1621523627163"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "51ca58c6b4b46305975890a86a18a3d5",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_mv.fifo",
+          "awsRegion": "us-east-1"
+      },
+      {
+          "messageId": "c9523c1a-1be3-4cd1-84f8-2a025501deb3",
+          "receiptHandle": "AQEBWO1h7XbDII6iadiiJrZbxvB49+PcEOJeHbpTy43SUelbPYNH++ARxeq9yN9aXj/vINy/HHlzvTN3nnU2XcYDI5hplfq7TgUCWIHQUHR1IZfPnil6Y7dqMrNSVxTSGv2DIif/T5iZRCkBorKJwQLRZRlbsSNnp8fevoPr/oor0PBYQsIFI4HoS+oQu7aUoV6CZnQDivYearSUP/ZoSzteCbUAXTdpDke7s7h2R8Yw0Zu1ogCpGhl4cCNzzmVWJPJH2YDvCSHudVr9CRMNnkPKPpZLrthWD12SidjRyciDJ+g=",
+          "body": "{\"env\":\"dev\",\"resourceType\":\"InsurancePlan\",\"data\":{\"CD_PLANO\":5,\"CD_TIP_ACOMODACAO\":1,\"CD_TIP_PLANO\":1,\"CD_CATEGORIA\":1,\"DS_PLANO\":\"ANTARES ENFERMARIA\",\"SN_FATOR_MODERADOR\":\"S\",\"SN_ATIVO\":\"S\",\"CD_GRU_IMP_CAR_FEM\":1,\"CD_GRU_IMP_CAR_MASC\":2,\"CD_REGRA_REPASSE\":1,\"VL_PERCENTUAL_REPASSE\":100,\"CD_REGISTRO_MS\":488879211,\"CD_GRUPO_FAIXA_ETARIA\":2,\"NM_PROGRAMA_DA_CARTEIRA\":null,\"CD_GRUPO_FRANQUIA\":null,\"SN_REGISTRADO_ANS\":\"S\",\"TP_PERIODO_IMPLANTACAO\":\"2\",\"TP_NATUREZA_JURIDICA\":\"6\",\"TP_COBERTURA_OFERECIDA\":\"06\",\"CD_NIVEL_HIERARQUICO\":0,\"TP_ABRANGENCIA_GEOGRAFICA\":\"4\",\"SN_SIB\":\"S\",\"SN_SIP\":\"S\",\"SN_DIOPS\":\"S\",\"CD_MULTI_EMPRESA\":1,\"CD_PLANO_OPERADORA\":null,\"DS_PLANO_CARTEIRA\":\"ANTARES ENFERMARIA\",\"SN_IMPEDIR_ADESAO\":\"N\",\"SN_RESTRITO_BENEFC_INATIVO\":\"N\",\"TP_OBRIGA_CARTEIRA_CNTR\":\"C\",\"CD_PTU_PLANO_INTERCAMBIO\":null,\"CD_GRU_RPS\":null,\"SN_MONITORAMENTO_TISS\":\"S\",\"SN_ODONTOLOGICO\":\"N\",\"CD_MODELO_CARTEIRA\":null,\"CD_REGRA_COBRANCA\":null,\"CD_USUARIO_INCLUSAO\":\"GISELE.RIBEIRO\",\"DT_INCLUSAO\":\"2021-05-18T15:11:12.000Z\",\"SN_ENVIA_A450\":\"S\",\"CD_REDE_REFERENCIADA\":null,\"CD_PLANO_INTERNO\":null,\"SN_ADAPTADO\":\"N\",\"DT_INICIO_VIGENCIA\":\"2021-05-14T00:00:00.000Z\",\"SN_PORTAL_CORRETOR\":\"S\",\"TP_REDE_MIN\":null,\"CD_PLANO_RECIPROCIDADE\":null,\"SN_GUIA_MEDICO\":\"S\",\"CD_PLANO_MV2000\":null,\"TP_PAGAMENTO\":\"P\",\"SN_ENVIA_DMED_IR\":\"S\",\"SN_ATIVA_PARENTESCO\":\"N\",\"CD_MODELO_ADAPTACAO_PLANO\":null,\"SN_OBRIGA_DEP_MESMO_PLANO_TIT\":\"N\",\"SN_SADT_EVOLUI_PARA_INT_RATEIO\":\"N\",\"SN_OBRIGA_CHAVE_LIBERACAO\":\"N\",\"SN_REST_ACESSO_PREST_REDE\":\"N\",\"NR_CARENCIA_ACOMODACAO\":null},\"modified\":\"2021-05-20T15:11:49.788Z\",\"messageId\":\"message-InsurancePlan-dev-1621523509788\",\"groupId\":\"group-InsurancePlan-dev\"}",
+          "attributes": {
+              "ApproximateReceiveCount": "1",
+              "SentTimestamp": "1621523511623",
+              "SequenceNumber": "18861854092685039616",
+              "MessageGroupId": "group-InsurancePlan-dev",
+              "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+              "MessageDeduplicationId": "message-InsurancePlan-dev-1621523509788",
+              "ApproximateFirstReceiveTimestamp": "1621523627163"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "0bf428a1882bfa5464551356a18f1a1e",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_mv.fifo",
+          "awsRegion": "us-east-1"
+      },
+      {
+          "messageId": "9724efda-b3db-4fa3-8e06-acacf6f32112",
+          "receiptHandle": "AQEBh1aLbSGEsCaz8UBIehvydwjHtivpxR8oXK3vuP+Bo3HHorEqBe46jfJoRp+KKh9/Cy+KEe619U7gGYFd0rts8aio+cH9qqE5+qFbCruOaFFMBubuTwJVi0hXhD2gctmQXGpwAVjKVpQdmt7eE5nV5PDDkhrZFwBlBWDfUbdiwmazc/yiLZERm0Z4tliAHdgc0hEyWHImqRBOYDo+dPEIDUsKpRtXeZQSdZ6KOl79or/1Mz8zXgltum167WALxox7PtoGm2Eth/3TQFDXO2fDC5D3lW1CyaxCVswwjkGOuJI=",
+          "body": "{\"env\":\"dev\",\"resourceType\":\"InsurancePlan\",\"data\":{\"CD_PLANO\":6,\"CD_TIP_ACOMODACAO\":7,\"CD_TIP_PLANO\":1,\"CD_CATEGORIA\":1,\"DS_PLANO\":\"ANTARES +\",\"SN_FATOR_MODERADOR\":\"S\",\"SN_ATIVO\":\"S\",\"CD_GRU_IMP_CAR_FEM\":1,\"CD_GRU_IMP_CAR_MASC\":2,\"CD_REGRA_REPASSE\":1,\"VL_PERCENTUAL_REPASSE\":100,\"CD_REGISTRO_MS\":488878212,\"CD_GRUPO_FAIXA_ETARIA\":2,\"NM_PROGRAMA_DA_CARTEIRA\":null,\"CD_GRUPO_FRANQUIA\":null,\"SN_REGISTRADO_ANS\":\"S\",\"TP_PERIODO_IMPLANTACAO\":\"2\",\"TP_NATUREZA_JURIDICA\":\"6\",\"TP_COBERTURA_OFERECIDA\":\"06\",\"CD_NIVEL_HIERARQUICO\":0,\"TP_ABRANGENCIA_GEOGRAFICA\":\"4\",\"SN_SIB\":\"S\",\"SN_SIP\":\"S\",\"SN_DIOPS\":\"S\",\"CD_MULTI_EMPRESA\":1,\"CD_PLANO_OPERADORA\":null,\"DS_PLANO_CARTEIRA\":\"ANTARES +\",\"SN_IMPEDIR_ADESAO\":\"N\",\"SN_RESTRITO_BENEFC_INATIVO\":\"N\",\"TP_OBRIGA_CARTEIRA_CNTR\":\"C\",\"CD_PTU_PLANO_INTERCAMBIO\":null,\"CD_GRU_RPS\":null,\"SN_MONITORAMENTO_TISS\":\"S\",\"SN_ODONTOLOGICO\":\"N\",\"CD_MODELO_CARTEIRA\":null,\"CD_REGRA_COBRANCA\":null,\"CD_USUARIO_INCLUSAO\":\"GISELE.RIBEIRO\",\"DT_INCLUSAO\":\"2021-05-18T15:38:05.000Z\",\"SN_ENVIA_A450\":\"S\",\"CD_REDE_REFERENCIADA\":null,\"CD_PLANO_INTERNO\":null,\"SN_ADAPTADO\":\"N\",\"DT_INICIO_VIGENCIA\":\"2021-05-14T00:00:00.000Z\",\"SN_PORTAL_CORRETOR\":\"S\",\"TP_REDE_MIN\":null,\"CD_PLANO_RECIPROCIDADE\":null,\"SN_GUIA_MEDICO\":\"S\",\"CD_PLANO_MV2000\":null,\"TP_PAGAMENTO\":\"P\",\"SN_ENVIA_DMED_IR\":\"S\",\"SN_ATIVA_PARENTESCO\":\"N\",\"CD_MODELO_ADAPTACAO_PLANO\":null,\"SN_OBRIGA_DEP_MESMO_PLANO_TIT\":\"N\",\"SN_SADT_EVOLUI_PARA_INT_RATEIO\":\"N\",\"SN_OBRIGA_CHAVE_LIBERACAO\":\"N\",\"SN_REST_ACESSO_PREST_REDE\":\"N\",\"NR_CARENCIA_ACOMODACAO\":null},\"modified\":\"2021-05-20T15:11:50.762Z\",\"messageId\":\"message-InsurancePlan-dev-1621523510762\",\"groupId\":\"group-InsurancePlan-dev\"}",
+          "attributes": {
+              "ApproximateReceiveCount": "1",
+              "SentTimestamp": "1621523512319",
+              "SequenceNumber": "18861854092863215872",
+              "MessageGroupId": "group-InsurancePlan-dev",
+              "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+              "MessageDeduplicationId": "message-InsurancePlan-dev-1621523510762",
+              "ApproximateFirstReceiveTimestamp": "1621523627163"
+          },
+          "messageAttributes": {},
+          "md5OfBody": "5f17eaae2e13e7cb19251d9f5c9640dc",
+          "eventSource": "aws:sqs",
+          "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_mv.fifo",
+          "awsRegion": "us-east-1"
+      }
+  ]
+}

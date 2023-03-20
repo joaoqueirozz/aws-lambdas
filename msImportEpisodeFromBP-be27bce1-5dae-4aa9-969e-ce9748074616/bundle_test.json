@@ -1,0 +1,288 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-search-all",
+    "type": "search-all",
+    "total": 8,
+    "link": "https://fhir.dataopera.com.br/v1?Encounter.identifier.value=14748706&Patient.identifier.value=60cd63db-b98b-410c-b159-887f16a8e8d7",
+    "entry": [
+        {
+            "resource": {
+                "code": {
+                    "coding": [
+                        {
+                            "code": "41925-9",
+                            "display": "SATURACAO"
+                        }
+                    ],
+                    "text": "SATURACAO"
+                },
+                "context": {
+                    "reference": "Encounter/14748706"
+                },
+                "extension": [
+                    {
+                        "valueCode": "1",
+                        "valueString": "Sinais Vitais"
+                    }
+                ],
+                "meta": {
+                    "source": "BP-PROD"
+                },
+                "resourceType": "Observation",
+                "subject": {
+                    "display": "Arthur Martins de Souza",
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                },
+                "valueDateTime": "2022-01-08T21:04:39Z",
+                "valueString": "96"
+            }
+        },
+        {
+            "resource": {
+                "code": {
+                    "coding": [
+                        {
+                            "code": "12345-6",
+                            "display": "Teste"
+                        }
+                    ],
+                    "text": "Teste"
+                },
+                "context": {
+                    "reference": "Encounter/14748706"
+                },
+                "extension": [
+                    {
+                        "valueCode": "1",
+                        "valueString": "Sinais Vitais"
+                    }
+                ],
+                "meta": {
+                    "source": "BP-PROD"
+                },
+                "resourceType": "Observation",
+                "subject": {
+                    "display": "Arthur Martins de Souza",
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                },
+                "valueDateTime": "2022-01-08T21:04:39Z",
+                "valueString": "teste"
+            }
+        },
+        {
+            "resource": {
+                "category": {
+                    "coding": [
+                        {
+                            "code": "Principal"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "NAUSEA",
+                            "display": "NAUSEA E VOMITOS",
+                            "system": "urn:oid:2.16.840.1.113883.6.3"
+                        }
+                    ],
+                    "text": "NAUSEA E VOMITOS"
+                },
+                "context": {
+                    "reference": "Encounter/14748706"
+                },
+                "effectiveDateTime": "2022-01-09T01:40:29Z",
+                "meta": {
+                    "source": "BP-PROD"
+                },
+                "resourceType": "DiagnosticReport",
+                "subject": {
+                    "display": "Arthur Martins de Souza",
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                }
+            }
+        },
+        {
+            "resource": {
+                "assessor": {
+                    "reference": "Practitioner/4802162"
+                },
+                "context": {
+                    "reference": "Encounter/14748706"
+                },
+                "date": "2022-01-09T01:40:34Z",
+                "description": "Alta do Pronto Atendimento\n",
+                "meta": {
+                    "source": "BP-PROD"
+                },
+                "resourceType": "ClinicalImpression",
+                "subject": {
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                },
+                "summary": "Orientação de Alta"
+            }
+        },
+        {
+            "resource": {
+                "class": {
+                    "code": "emergency"
+                },
+                "id": "14748706",
+                "identifier": [
+                    {
+                        "value": "14748706"
+                    }
+                ],
+                "meta": {
+                    "source": "BP-PROD"
+                },
+                "participant": [
+                    {
+                        "individual": {
+                            "display": "Marcia Elamid Costa",
+                            "reference": "Practitioner/4802162"
+                        },
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "display": " Pediatria"
+                                    }
+                                ],
+                                "text": " Pediatria"
+                            }
+                        ]
+                    }
+                ],
+                "period": {
+                    "end": "2022-01-09T01:40:35Z",
+                    "start": "2022-01-08T21:03:49Z"
+                },
+                "resourceType": "Encounter",
+                "serviceProvider": {
+                    "display": "Sami Assistência Médica Ltda",
+                    "reference": "Organization/227"
+                },
+                "status": "finished",
+                "subject": {
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                }
+            }
+        },
+        {
+            "resource": {
+                "context": {
+                    "reference": "Encounter/14748706"
+                },
+                "meta": {
+                    "source": "BP-PROD"
+                },
+                "occurrencePeriod": {
+                    "end": "2022-01-08T21:05:39Z",
+                    "start": "2022-01-08T21:04:53Z"
+                },
+                "performer": {
+                    "reference": "Practitioner/4802162"
+                },
+                "reasonCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "Manchester",
+                            "display": "Urgente"
+                        }
+                    ],
+                    "text": "Urgente"
+                },
+                "resourceType": "RiskAssessment",
+                "subject": {
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                }
+            }
+        },
+        {
+            "resource": {
+                "active": true,
+                "birthDate": "1992-02-26",
+                "gender": "male",
+                "id": "4802162",
+                "identifier": [
+                    {
+                        "system": "https://www.cfm.org.br/",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "CRM"
+                                }
+                            ]
+                        },
+                        "value": "190376 - SP"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Mateus Vogado Batista"
+                    }
+                ],
+                "qualification": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "display": " Ortopedia / Traumatologia"
+                                }
+                            ],
+                            "text": " Ortopedia / Traumatologia"
+                        }
+                    }
+                ],
+                "resourceType": "Practitioner",
+                "telecom": [
+                    {
+                        "value": "952425277"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "assertedDate": "2022-01-27T11:34:05Z",
+                "asserter": {
+                    "reference": "Practitioner/4802162"
+                },
+                "context": {
+                    "reference": "Encounter/14748706"
+                },
+                "note": [
+                    {
+                        "text": "Motivo Alta\\nAlta melhorado\\nDiagnóstico: \\nLEIOMIOMA DO UTERO\r\n\nAntimicrobianos:\n \\nHemocomponentes: \n\\nAtividade Física ? \\nNão\\nData retorno: \\n14/02/2022 00:00:00"
+                    }
+                ],
+                "resourceType": "Condition",
+                "subject": {
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                }
+            }
+        },
+        {
+            "resource": {
+                "context": {
+                    "reference": "Encounter/14748706"
+                },
+                "effectiveDateTime": "2022-01-30T16:58:44Z",
+                "informationSource": {
+                    "reference": "Practitioner/4802162"
+                },
+                "note": [
+                    {
+                        "text": "Bactrim ped 2,5mL 2x/dia - Dose:   - Intervalo:  - Via:  "
+                    }
+                ],
+                "resourceType": "MedicationStatement",
+                "status": "active",
+                "subject": {
+                    "reference": "Patient/60cd63db-b98b-410c-b159-887f16a8e8d7"
+                }
+            }
+        }
+    ]
+}

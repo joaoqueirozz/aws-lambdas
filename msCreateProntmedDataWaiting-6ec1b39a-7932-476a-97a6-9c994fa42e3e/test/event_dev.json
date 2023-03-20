@@ -1,0 +1,177 @@
+{
+    "env": "dev",
+    "resourceType": "Bundle",
+    "base_url": "https://5gqcx4z7z5.execute-api.us-east-1.amazonaws.com/development/fhir",
+    "db_schema": "datawarehouse_dev",
+    "basicType": "price",
+    "costGroup": 3,
+    "payload": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [{
+            "fullUrl": "urn:uuid:e072b3d4-82e3-42f8-9a20-89350948ffc2",
+            "resource": {
+                "resourceType": "Basic",
+                "extension": [{
+                        "url": "./StructureDefinition/price-age-group",
+                        "valueRange": {
+                            "low": {
+                                "value": 0,
+                                "unit": "age"
+                            },
+                            "high": {
+                                "value": 18,
+                                "unit": "age"
+                            }
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-general-cost",
+                        "valueMoney": {
+                            "value": "10003.00",
+                            "currency": "R$"
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-group",
+                        "valueInteger": 1
+                    },
+                    {
+                        "url": "./StructureDefinition/price-healthplan",
+                        "valueReference": {
+                            "reference": "InsurancePlan/6",
+                            "type": "InsurancePlan"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Basic?basic_type=price"
+            }
+        }, {
+            "fullUrl": "urn:uuid:e072b3d4-82e3-42f8-9a20-89350948ffc2",
+            "resource": {
+                "resourceType": "Basic",
+                "extension": [{
+                        "url": "./StructureDefinition/price-age-group",
+                        "valueRange": {
+                            "low": {
+                                "value": 19,
+                                "unit": "age"
+                            },
+                            "high": {
+                                "value": 29,
+                                "unit": "age"
+                            }
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-general-cost",
+                        "valueMoney": {
+                            "value": "80.00",
+                            "currency": "R$"
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-group",
+                        "valueInteger": 1
+                    },
+                    {
+                        "url": "./StructureDefinition/price-healthplan",
+                        "valueReference": {
+                            "reference": "InsurancePlan/6",
+                            "type": "InsurancePlan"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Basic?basic_type=price"
+            }
+        }, {
+            "fullUrl": "urn:uuid:e072b3d4-82e3-42f8-9a20-89350948ffc2",
+            "resource": {
+                "resourceType": "Basic",
+                "extension": [{
+                        "url": "./StructureDefinition/price-age-group",
+                        "valueRange": {
+                            "low": {
+                                "value": 30,
+                                "unit": "age"
+                            },
+                            "high": {
+                                "value": 59,
+                                "unit": "age"
+                            }
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-general-cost",
+                        "valueMoney": {
+                            "value": "150.00",
+                            "currency": "R$"
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-group",
+                        "valueInteger": 1
+                    },
+                    {
+                        "url": "./StructureDefinition/price-healthplan",
+                        "valueReference": {
+                            "reference": "InsurancePlan/6",
+                            "type": "InsurancePlan"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Basic?basic_type=price"
+            }
+        }, {
+            "fullUrl": "urn:uuid:e072b3d4-82e3-42f8-9a20-89350948ffc2",
+            "resource": {
+                "resourceType": "Basic",
+                "extension": [{
+                        "url": "./StructureDefinition/price-age-group",
+                        "valueRange": {
+                            "low": {
+                                "value": 60,
+                                "unit": "age"
+                            },
+                            "high": {
+                                "value": 120,
+                                "unit": "age"
+                            }
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-general-cost",
+                        "valueMoney": {
+                            "value": "300.00",
+                            "currency": "R$"
+                        }
+                    },
+                    {
+                        "url": "./StructureDefinition/price-group",
+                        "valueInteger": 1
+                    },
+                    {
+                        "url": "./StructureDefinition/price-healthplan",
+                        "valueReference": {
+                            "reference": "InsurancePlan/6",
+                            "type": "InsurancePlan"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Basic?basic_type=price"
+            }
+        }]
+    }
+}

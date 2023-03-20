@@ -1,0 +1,6 @@
+{
+    "patient": "5462100010001000100",
+    "base_url": "https://n9im7t03ha.execute-api.us-east-1.amazonaws.com/production/fhir",
+    "db_schema": "datawarehouse",
+    "env": "prd"
+}

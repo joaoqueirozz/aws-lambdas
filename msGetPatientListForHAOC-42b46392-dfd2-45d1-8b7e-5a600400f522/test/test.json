@@ -1,0 +1,4 @@
+{
+    "env": "prd",
+    "db_schema": "datawarehouse"
+}

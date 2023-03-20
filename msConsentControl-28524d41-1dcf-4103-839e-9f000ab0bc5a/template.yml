@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msConsentControl
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      # Code:
+      #   S3Bucket: sami-fhir-omop
+      #   S3Key: >-
+      #     serverless/msConsentControl/dev/1658519442238-2022-07-22T19:50:42.238Z/msConsentControl.zip
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msConsentControl
+      MemorySize: 2048
+      Timeout: 900
+      Description: >-
+        Microservi?o que acompanha consentimento e status dos membros
+        periodicamente
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:70'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:got:1'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:pgknex:4'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionxvwsHqIDpye9V3Po8FVjNSaST0xdyIIg2RJysh6EY:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: 0i5ioXw6vyAO0bW0F8+uKWpeHKCflIc7+EUiPxQ8wTA=
+      Description: >-
+        Microservi?o que acompanha consentimento e status dos membros
+        periodicamente
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+    Export:
+      Name: sls-msConsentControl-dev-ServerlessDeploymentBucketName
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionxvwsHqIDpye9V3Po8FVjNSaST0xdyIIg2RJysh6EY
+    Export:
+      Name: sls-msConsentControl-dev-FuncLambdaFunctionQualifiedArn

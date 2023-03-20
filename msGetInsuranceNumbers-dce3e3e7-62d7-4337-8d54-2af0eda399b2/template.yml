@@ -1,0 +1,48 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msGetEpisodeList
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msGetEpisodeList
+      MemorySize: 2048
+      Timeout: 900
+      Description: Microservi?o que retorna um lista de ids de atendimentos
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:66'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:pgknex:2'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionwYm8kSACrRsg28NxfOyK5pTwqhtc0KjAXLiuGkJAw:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: cHECjmqg5L+uRsK6j1VUjg9tykFadCb1oHU17+kca0k=
+      Description: Microservi?o que retorna um lista de ids de atendimentos
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+    Export:
+      Name: sls-msGetEpisodeList-dev-ServerlessDeploymentBucketName
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionwYm8kSACrRsg28NxfOyK5pTwqhtc0KjAXLiuGkJAw
+    Export:
+      Name: sls-msGetEpisodeList-dev-FuncLambdaFunctionQualifiedArn

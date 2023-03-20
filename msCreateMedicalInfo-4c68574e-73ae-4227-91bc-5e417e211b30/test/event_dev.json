@@ -1,0 +1,90 @@
+{
+  "payload": {
+    "identifier": [
+      {
+        "system": "./NamingSystem/cpf",
+        "value": "13478924688"
+      },
+      {
+        "system": "./NamingSystem/conselhoRegional",
+        "value": "6544057"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "text": "Ruan Manoel da Silva"
+      }
+    ],
+    "extension": [
+      {
+        "url": "./StructureDefinition/practitioner-birthTime",
+        "valueDateTime": "1985-02-10T00:00:00.000Z"
+      },
+      {
+        "url": "./StructureDefinition/gender",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "gender",
+              "code": "male"
+            }
+          ]
+        }
+      }
+    ],
+    "telecom": [
+      {
+        "system": "email",
+        "value": "ruan.manoel@samisaude.com"
+      },
+      {
+        "system": "phone",
+        "use": "mobile",
+        "value": "5511998673155"
+      },
+      {
+        "system": "phone",
+        "use": "home",
+        "value": "551127688420"
+      },
+      {
+        "system": "phone",
+        "use": "work",
+        "value": "5511998673155"
+      }
+    ],
+    "address": [
+      {
+        "line": "Rua Djalma Correia, 148",
+        "district": "Vila Inglesa",
+        "city": "São Paulo",
+        "state": "SP",
+        "postalCode": "04653030",
+        "country": "Brasil",
+        "extension": [
+          {
+            "url": "./StructureDefinition/geolocation",
+            "extension": [
+              {
+                "url": "latitude",
+                "valueDecimal": -23.80545
+              },
+              {
+                "url": "longitude",
+                "valueDecimal": -46.889648
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "resourceType": "Practitioner",
+  "base_url": "https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir",
+  "db_schema": "datawarehouse_dev",
+  "env": "dev",
+  "usecrypto": "",
+  "skipmv": "true",
+  "basicType": ""
+}

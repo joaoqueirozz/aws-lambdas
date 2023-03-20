@@ -1,0 +1,20 @@
+{
+  "Records": [
+    {
+      "messageId": "147c707f-848d-413d-ad11-7c97d6716853",
+      "receiptHandle": "AQEBt40vI+DTp47Juiyh2fnk+smJySpKkwsyS9OmuZVjsf0r55wfX6QFmmxRriPiFnAaeLcoMV4v85GxNtgoPWqbLvZdr/LNBVRpCBFKgJNJiJkPLiPoS9+vnNQmIjohn6CJgBlEYlY/1e2OGSLRhWr+jf6X/jRS7n9F64b3I0hx1jU7zAqwdsMnxh5Nhft/5+xreBV4PJJ4PKIBw4Jg48qZNwwgULRuFFozOTKUYr78hYffB5bEB6EUrQ9V4RA8ftbZgC0BUmjgP2IMWP/+I9UgSO0hJBLCK0R3GOzWv3WidqkTGWZuw8ARtUPEf2ntImv2YLeGogTg4jvJvoCYIDwv8q9E9czptRd8YA/fK4TYRiz3l7b+4QzG55KQYqaOlb8Ry79eNosfdDC55bQmkBxn3w==",
+      "body": "{\"entity\":\"lives\",\"companyCnpj\":\"36567721000125\",\"companyId\":1,\"memberId\":\"5462100020001005145\",\"profile\":\"EMPLOYEE\",\"kinship\":null,\"name\":\"Daniel Lisboa\",\"document\":\"03113847060\",\"gender\":\"MALE\",\"email\":\"daniellisboa2@samisaude.com\",\"mothersName\":\"Maria\",\"birthDate\":\"1985-03-07\",\"phoneNumber\":\"+5511985922119\",\"holderCpf\":null,\"dataWarehousePlanId\":1,\"gracePeriodTypeId\":1,\"entryDate\":\"2021-10-02\",\"planId\":1,\"activatedPlan\":true,\"effectiveDate\":\"2021-11-6\",\"id\":5,\"company\":{\"id\":1,\"customerId\":1,\"addressId\":1,\"name\":\"SAMI ASSISTENCIA MEDICA LTDA\",\"alias\":null,\"document\":\"36567721000125\",\"type\":\"MATRIZ\",\"foundedAt\":null,\"size\":null,\"capital\":\"38982754.00\",\"email\":\"VITOR.ASSEITUNO@OISAMI.COM\",\"phone\":\"(11) 3728-9228\",\"federalEntity\":null,\"status\":null,\"statusDate\":null,\"legalNatureCode\":\"2062\",\"legalNatureDescription\":\"Sociedade Empresária Limitada\",\"primaryActivityCode\":\"6550200\",\"primaryActivityDescription\":\"Planos de saúde\",\"effectiveDate\":\"2020-10-06\",\"isSimplesNacional\":false,\"isSimei\":false,\"isActive\":true,\"hasPaid\":true,\"isOldFlow\":false,\"totalCompanyFinancialDebt\":\"0.00\",\"totalPartnersFinancialDebt\":\"0.00\",\"score\":\"0.00\",\"createdAt\":\"2021-10-04T15:14:09.000Z\",\"updatedAt\":\"2021-10-04T15:14:09.000Z\",\"address\":{\"id\":1,\"street\":\"AL VICENTE PINZON\",\"number\":\"54\",\"complement\":\"ANDAR 11\",\"district\":\"VILA OLIMPIA\",\"city\":\"SAO PAULO\",\"state\":\"SP\",\"postalCode\":\"04547130\",\"latitude\":\"-23.8414900374\",\"longitude\":\"-46.3158496669\",\"createdAt\":\"2021-10-04T15:14:09.000Z\",\"updatedAt\":\"2021-10-04T15:14:09.000Z\"}}}",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1631299622537",
+        "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+        "ApproximateFirstReceiveTimestamp": "1631299622558"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "b932fbeec8914a0b657fcfa717b558d9",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_export_isalab",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}

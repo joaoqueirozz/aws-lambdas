@@ -1,0 +1,23 @@
+{
+  "Records": [
+    {
+      "messageId": "93150c24-aa94-4c6e-84c0-4e2a1e295dbf",
+      "receiptHandle": "AQEBrF3Yl4TKskKVzAlMxZOGuuKHs8qIcSVcmzCU7DIWTue7Ij/QCCWTXGax5UhKz3q2/Gfc4lJQ0ismBvRmo3qoIcmKWkzf+GSwEFXZtSNeSswC/O41y7Hdc30g4L431Q4ZTPmKCYOVeEuXAX+dcPswzCRZdVfZpGHug3on6vxZ7OxDaIv2zSFmG04bKyndnfcPMxnZwKa72ye2MLu70c0SA1R/RIXCmTczNhX4LJ+hSn85dCuFvOFgQ2ld9fS9Gq5afOETbj3AT/V6XpLXlsWdPUbd2/AuPOPNNrgjkjNk3ow=",
+      "body": "{\n  \"data\": {\n    \"last_appointment\": \"2021-09-27T18:59:55.897Z\"\n  },\n  \"id\": \"385821\",\n  \"methodType\": \"update\",\n  \"resourceType\": \"Patient\",\n  \"schema\": \"datawarehouse\",\n  \"env\": \"prd\"\n}",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1632770832654",
+        "SequenceNumber": "18864733406868975872",
+        "MessageGroupId": "124567893",
+        "SenderId": "AIDA2JP2BAOGR4CCTQOMI",
+        "MessageDeduplicationId": "987654321333",
+        "ApproximateFirstReceiveTimestamp": "1632770832654"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "286fa82eac2dd275baaaab2d1c21d833",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:prd_export_hubspot.fifo",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}

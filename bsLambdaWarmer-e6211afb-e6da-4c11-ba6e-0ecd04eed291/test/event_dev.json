@@ -1,0 +1,7 @@
+{
+    "env": "dev",
+    "resourceType": "Patient",
+    "id": 26,
+    "db_schema": "datawarehouse_dev",
+    "base_url": "https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development"
+}

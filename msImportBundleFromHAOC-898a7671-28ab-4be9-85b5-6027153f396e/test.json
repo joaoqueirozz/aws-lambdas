@@ -1,0 +1,7 @@
+{
+    "Records": [
+        {
+            "body": "{\n    \"env\": \"dev\",\n   \"db_schema\": \"datawarehouse_dev\",\n   \"payload\": {\n      \"nrCpf\": \"50361135009\",\n    }\n}"
+        }
+    ]
+}

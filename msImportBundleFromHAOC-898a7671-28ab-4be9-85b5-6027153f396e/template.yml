@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msImportBundleFromHAOC
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msImportBundleFromHAOC
+      MemorySize: 2048
+      Timeout: 900
+      Description: Microserviço que recebe um evento
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:70'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:got:1'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:fhirOmopConverter:159'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:databaseOps:36'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:pgknex:4'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersion1tPfz5BEa69By9MlLW4OvRGwfygXlIyXTK1pveIdc:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: 0pjIuBTcUwA9MXsJYiiIRk58DF3T4phrjGvjtjqdF90=
+      Description: Microserviço que recebe um evento
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+    Export:
+      Name: sls-msImportBundleFromHAOC-dev-ServerlessDeploymentBucketName
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersion1tPfz5BEa69By9MlLW4OvRGwfygXlIyXTK1pveIdc
+    Export:
+      Name: sls-msImportBundleFromHAOC-dev-FuncLambdaFunctionQualifiedArn

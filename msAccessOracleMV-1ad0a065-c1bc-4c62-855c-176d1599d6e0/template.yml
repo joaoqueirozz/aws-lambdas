@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msAccessOracleMV
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msAccessOracleMV
+      MemorySize: 2048
+      Timeout: 60
+      Description: Microservi?o que busca informa??es da MV
+      Environment:
+        Variables:
+          LD_LIBRARY_PATH: ./instantclient_21_1
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-03e75a394c829e686
+        SubnetIds:
+          - subnet-0f1db4f8c184fd34c
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:46'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:lodash:2'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionEA7ANkuBMrNiHasLrGs4VSE2r51FVrCyvbsnA7KlI:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: BqHidcOSM7aKcwqwPdNF/8M45eLpouK0fuzMJM9pTbI=
+      Description: Microservi?o que busca informa??es da MV
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionEA7ANkuBMrNiHasLrGs4VSE2r51FVrCyvbsnA7KlI

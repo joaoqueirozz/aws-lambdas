@@ -1,0 +1,30 @@
+{
+  "entity": "lives",
+  "db_schema": "datawarehouse_dev",
+  "id": 1099,
+  "env": "dev",
+  "data": {
+    "name": "Roberto Santos cardoso",
+    "name_social": "Abate Souza silva",
+    "name_mother": "Elizabeth Souza silva",
+    "document_identification_primary": "134789246227796",
+    "document_identification_secondary": "445221534557796",
+    "birth_at": "2015-01-29T02:00:00.000Z",
+    "birth_city": "SP",
+    "birth_province": "NY",
+    "death_at": "2015-01-29T02:00:00.000Z",
+    "gender": "male",
+    "race": 2,
+    "scholarity": 3,
+    "marital_status": "unknown",
+    "immigration_origin": "ggg",
+    "immigration_at": "2015-01-29T02:00:00.000Z",
+    "national_health_identification_number": "36985214777",
+    "primary_health_provider_id": 2,
+    "primary_health_care_site_id": 3,
+    "patient_app_id": "weq1222x33x333789",
+    "nationality": 2,
+    "health_card_number": "34",
+    "holder_id": 480
+  }
+}

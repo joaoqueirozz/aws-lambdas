@@ -1,0 +1,7 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "patient-nationality",
+    "base_url": "https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir",
+    "db_schema": "datawarehouse",
+    "env": "prd"
+}

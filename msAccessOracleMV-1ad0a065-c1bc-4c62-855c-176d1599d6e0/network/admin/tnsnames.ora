@@ -1,0 +1,13 @@
+MYSERVICE = (DESCRIPTION=
+            (CONNECT_TIMEOUT=5)
+            (TRANSPORT_CONNECT_TIMEOUT=3)
+            (RETRY_COUNT=3)
+            (ADDRESS_LIST=
+               (LOAD_BALANCE=on)
+               (ADDRESS=(PROTOCOL=TCP)
+               (HOST=168.138.128.133)
+               (PORT=1521)
+            )
+         )
+         (CONNECT_DATA=
+            (SERVICE_NAME=bdsim_pdb1.sub07291540470.redemv.oraclevcn.com)))

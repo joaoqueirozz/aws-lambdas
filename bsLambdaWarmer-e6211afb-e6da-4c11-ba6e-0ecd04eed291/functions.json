@@ -1,0 +1,8 @@
+{
+    "lambdas": [
+        "bsExecuteTransaction",
+        "msCreateMVData",
+        "msCreateProntmedData"
+    ],
+    "env": "prd"
+}

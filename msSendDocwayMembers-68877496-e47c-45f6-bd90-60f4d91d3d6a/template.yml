@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msSendDocwayMembers
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Code:
+        S3Bucket: sami-fhir-omop
+        S3Key: >-
+          serverless/msSendDocwayMembers/dev/1653943083821-2022-05-30T20:38:03.821Z/msSendDocwayMembers.zip
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msSendDocwayMembers
+      MemorySize: 2048
+      Timeout: 300
+      Description: >-
+        Microservi?o que envia a base de usu?rios para a Docway com a regra da
+        vig?ncia
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:70'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:got:1'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:pgknex:4'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionWxfTxDQIWRVdmQfRWZRu8u6AMz3HAGoC5WZrcfHFs:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: K2h0wQQtC/Izo7ZPnJgj6g+TGHp/gv2PV/RGSy56EHQ=
+      Description: >-
+        Microservi?o que envia a base de usu?rios para a Docway com a regra da
+        vig?ncia
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+    Export:
+      Name: sls-msSendDocwayMembers-dev-ServerlessDeploymentBucketName
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionWxfTxDQIWRVdmQfRWZRu8u6AMz3HAGoC5WZrcfHFs
+    Export:
+      Name: sls-msSendDocwayMembers-dev-FuncLambdaFunctionQualifiedArn

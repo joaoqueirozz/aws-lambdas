@@ -1,0 +1,3 @@
+- Procedures precisa usar TUSS, porém a tabela TUSS não cabe no Dynamo. Pensar numa alternativa.
+- Tb não tem concept nem synonym
+- Procedures, revisar o procedure_type

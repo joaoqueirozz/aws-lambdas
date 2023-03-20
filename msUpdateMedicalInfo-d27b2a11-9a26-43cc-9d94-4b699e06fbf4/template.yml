@@ -1,0 +1,53 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msUpdateMedicalInfo
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Code:
+        S3Bucket: sami-fhir-omop
+        S3Key: >-
+          serverless/msUpdateMedicalInfo/dev/1604410931507-2020-11-03T13:42:11.507Z/msUpdateMedicalInfo.zip
+      FunctionName: msUpdateMedicalInfo
+      Handler: index.handler
+      MemorySize: 128
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role'
+      Runtime: nodejs12.x
+      Timeout: 30
+      Description: Microservi?o que atualiza um recurso no DW
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Environment:
+        Variables:
+          AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:62'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:databaseOps:31'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:fhirOmopConverter:146'
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:lodash:2'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionyGomMI0tYVXuBN3naum2vrb5g0Aq5B8CWJ1YsP9q4:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: yUsbSY9zpyF3RPB7TgG+aiCAY75T6uoQrAlW0UL4+Vo=
+      Description: Microservi?o que atualiza um recurso no DW
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionyGomMI0tYVXuBN3naum2vrb5g0Aq5B8CWJ1YsP9q4

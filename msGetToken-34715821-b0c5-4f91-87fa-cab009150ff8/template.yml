@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: 'AWS::Logs::LogGroup'
+    Properties:
+      LogGroupName: /aws/lambda/msGetToken
+  FuncLambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msGetToken
+      MemorySize: 256
+      Timeout: 60
+      Description: Microservi?o que autentica um usu?rio no Cognito
+      Tags:
+        - Key: api
+          Value: ESBSamiAuth
+      Role: 'arn:aws:iam::707583345549:role/aqr-sigma-fhir-cognito-role'
+      Layers:
+        - 'arn:aws:lambda:us-east-1:707583345549:layer:utils:65'
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionFPqniEI94YSo26buzdiCOdCBrYOpYfLjPZY3eG03VxY:
+    Type: 'AWS::Lambda::Version'
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: NNDW6KnWy0q3wTgHeOmG5j5SuFg3KyIKHJuzm0OgN9g=
+      Description: Microservi?o que autentica um usu?rio no Cognito
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionFPqniEI94YSo26buzdiCOdCBrYOpYfLjPZY3eG03VxY

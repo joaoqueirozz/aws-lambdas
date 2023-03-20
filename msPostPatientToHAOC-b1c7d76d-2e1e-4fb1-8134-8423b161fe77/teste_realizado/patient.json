@@ -1,0 +1,64 @@
+{
+    "resourceType": "Patient",
+    "extension": [],
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "TAX"
+                    }
+                ]
+            },
+            "system": "urn:oid:2.16.840.1.113883.13.237",
+            "value": "77820061120"
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://interop-haoc.com.br/fhir/CodeSystem/HAOCTipoDocumentoIndividuo-1.0",
+                        "code": "SAMI"
+                    }
+                ]
+            },
+            "value": "5462100010111654321"
+        },
+        {
+            "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0",
+            "extension": [
+                {
+                    "url": "relationship",
+                    "valueCode": "MTH"
+                },
+                {
+                    "url": "parent",
+                    "valueHumanName": {
+                        "use": "official",
+                        "text": "Gabriela Carvalho Vieira"
+                    }
+                }
+            ]
+        }
+    ],
+    "active": true,
+    "managingOrganization": {
+        "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.13.36",
+            "value": "422398"
+        }
+    },
+    "name": [
+        {
+            "use": "official",
+            "text": "André Amaro Toffanello"
+        },
+        {
+            "use": "usual",
+            "text": "André Amaro Toffanello"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1993-04-26"
+}

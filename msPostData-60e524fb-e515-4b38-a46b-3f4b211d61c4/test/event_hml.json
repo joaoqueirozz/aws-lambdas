@@ -1,0 +1,121 @@
+{
+  "env": "hml",
+  "resourceType": "Patient",
+  "db_schema": "datawarehouse_dev",
+  "base_url": "https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging",
+  "payload": {
+    "name": [
+      {
+        "use": "official",
+        "text": "Manoel Ribeiro de Souza"
+      },
+      {
+        "use": "usual",
+        "text": "Osvaldo"
+      }
+    ],
+    "extension": [
+      {
+        "valueString": "Laís Débora",
+        "url": "./StructureDefinition/patient-mothersMaidenName"
+      },
+      {
+        "valueDateTime": "1985-09-23T00:00:00.000Z",
+        "url": "./StructureDefinition/patient-birthTime"
+      },
+      {
+        "valueAddress": {
+          "city": "SP",
+          "state": "São Paulo"
+        },
+        "url": "./StructureDefinition/patient-birthPlace"
+      },
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "5",
+              "system": "race"
+            }
+          ]
+        },
+        "url": "./StructureDefinition/patient-race"
+      },
+      {
+        "valueCode": "1",
+        "url": "./StructureDefinition/patient-scholarity",
+        "display": "Sem instrução e menos de 1 ano de estudo"
+      },
+      {
+        "extension": [
+          {
+            "valueString": "Brasil",
+            "url": "origin"
+          },
+          {
+            "valueDateTime": "2000-01-01T00:00:00.000Z",
+            "url": "when"
+          }
+        ],
+        "url": "./StructureDefinition/patient-immigration"
+      },
+      {
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "10",
+                  "system": "nationality"
+                }
+              ]
+            },
+            "url": "code"
+          }
+        ],
+        "url": "./StructureDefinition/patient-nationality"
+      }
+    ],
+    "identifier": [
+      {
+        "value": "46041427004",
+        "system": "./NamingSystem/cpf"
+      },
+      {
+        "value": "7234393824",
+        "system": "./NamingSystem/cartao_sus"
+      }
+    ],
+    "gender": "male",
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "./ValueSet/marital-status",
+          "code": "3",
+          "display": "Viúvo"
+        }
+      ]
+    },
+    "address": [
+      {
+        "line": "Rua Doutor Aires Martins, 780, Torres 205",
+        "district": "Vila São Francisco",
+        "city": "São Paulo",
+        "state": "SP",
+        "postalCode": "05352905",
+        "country": "Brasil"
+      }
+    ],
+    "telecom": [
+      {
+        "value": "otávio@samisaude.com",
+        "system": "email"
+      },
+      {
+        "value": "5511986461747",
+        "system": "phone",
+        "use": "work"
+      }
+    ]
+  }
+}

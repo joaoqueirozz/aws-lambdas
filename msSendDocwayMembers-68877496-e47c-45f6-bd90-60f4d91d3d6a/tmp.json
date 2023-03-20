@@ -1,0 +1,87 @@
+{
+    "dev": {
+        "authorization": {
+            "url": "https://api-developer.docway.com.br/stage-auth/connect/token",
+            "token": "c2FtaXNhdWRlOjA2MjI1Yjc4",
+            "grantType": "client_credentials",
+            "scope": "api1"
+        },
+        "appointmentDetails": {
+            "url": "https://api-developer.docway.com.br/stage-appointment/api/appointments/{appointmentId}/details",
+            "key": "{appointmentId}"
+        },
+        "importDatabase": {
+            "url": "https://api-developer.docway.com.br/stage-importdata/api/importBase/Importclientbase",
+            "form-data": {
+                "SponsorEmail": "data@samisaude.com",
+                "ImportarLinhaZero": "false",
+                "DocumentIsCPF": "false",
+                "QtdDigitosCarteirinha": "16",
+                "NameColPosition": "0",
+                "DateOfBirthColPosition": "1",
+                "GenderColPosition": "2",
+                "IsHolderColPosition": "3",
+                "PhoneNumberColPosition": "4",
+                "EmailColPosition": "5",
+                "CardNumberColPosition": "6",
+                "DocumentNumberColPosition": "7",
+                "HolderDocumentNumberColPosition": "8"
+            }
+        },
+        "verifyImport": {
+            "url": "https://service.docway.com.br/stage-importdata/api/ImportBase/history/page/1/itens/1"
+        },
+        "verifyImportDetails": {
+            "url": "https://service.docway.com.br/stage-importdata/api/importBase/history/{importId}/log/page/1/itens/100"
+        }
+    },
+    "prd": {
+        "authorization": {
+            "url": "https://api-developer.docway.com.br/auth/connect/token",
+            "token": "c2FtaXNhdWRlOmY4NjI4Mzdl",
+            "grantType": "client_credentials",
+            "scope": "api1"
+        },
+        "appointmentDetails": {
+            "url": "https://api-developer.docway.com.br/appointment/api/appointments/{appointmentId}/details",
+            "key": "{appointmentId}"
+        },
+        "importDatabase": {
+            "url": "https://api-developer.docway.com.br/importdata/api/importBase/Importclientbase",
+            "form-data": {
+                "SponsorEmail": "data@samisaude.com",
+                "ImportarLinhaZero": "false",
+                "DocumentIsCPF": "false",
+                "QtdDigitosCarteirinha": "16",
+                "NameColPosition": "0",
+                "DateOfBirthColPosition": "1",
+                "GenderColPosition": "2",
+                "IsHolderColPosition": "3",
+                "PhoneNumberColPosition": "4",
+                "EmailColPosition": "5",
+                "CardNumberColPosition": "6",
+                "DocumentNumberColPosition": "7",
+                "HolderDocumentNumberColPosition": "8"
+            }
+        },
+        "verifyImport": {
+            "url": "https://service.docway.com.br/importdata/api/ImportBase/history/page/1/itens/1"
+        },
+        "verifyImportDetails": {
+            "url": "https://service.docway.com.br/importdata/api/importBase/history/{importId}/log/page/1/itens/100"
+        }
+    },
+    "all": {
+        "proceedIntegration": {
+            "APPOINTMENT_FINISHED": true,
+            "APPOINTMENT_ACCEPTED": false,
+            "APPOINTMENT_CREATED": false,
+            "APPOINTMENT_DATE_CHANGED": false,
+            "APPOINTMENT_CANCELED": false,
+            "DOCTOR_CHANGED": false,
+            "DOCTOR_VIDEO_ONLINE": false,
+            "IMPORTATION_STARTED": false,
+            "IMPORTATION_COMPLETED": false
+        }
+    }
+}

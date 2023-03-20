@@ -1,0 +1,20 @@
+{
+    "Records": [
+        {
+            "messageId": "147c707f-848d-413d-ad11-7c97d6716853",
+            "receiptHandle": "AQEBt40vI+DTp47Juiyh2fnk+smJySpKkwsyS9OmuZVjsf0r55wfX6QFmmxRriPiFnAaeLcoMV4v85GxNtgoPWqbLvZdr/LNBVRpCBFKgJNJiJkPLiPoS9+vnNQmIjohn6CJgBlEYlY/1e2OGSLRhWr+jf6X/jRS7n9F64b3I0hx1jU7zAqwdsMnxh5Nhft/5+xreBV4PJJ4PKIBw4Jg48qZNwwgULRuFFozOTKUYr78hYffB5bEB6EUrQ9V4RA8ftbZgC0BUmjgP2IMWP/+I9UgSO0hJBLCK0R3GOzWv3WidqkTGWZuw8ARtUPEf2ntImv2YLeGogTg4jvJvoCYIDwv8q9E9czptRd8YA/fK4TYRiz3l7b+4QzG55KQYqaOlb8Ry79eNosfdDC55bQmkBxn3w==",
+            "body": "{\"env\":\"dev\",\"schema\":\"datawarehouse_dev\",\"episodeId\":\"116188\",\"payload\":[{\"occurrence_at\":\"2021-09-10T17:27:36.610Z\",\"procedure_concept_id\":2835,\"procedure_source_value\":\"40301842\",\"procedure_synonym_id\":2835,\"provider_id\":\"3607\",\"life_id\":\"9015\",\"episode_id\":\"116188\"},{\"occurrence_at\":\"2021-09-10T17:27:40.237Z\",\"procedure_concept_id\":3712,\"procedure_source_value\":\"40316270\",\"procedure_synonym_id\":3712,\"provider_id\":\"3607\",\"life_id\":\"9015\",\"episode_id\":\"116188\"},{\"occurrence_at\":\"2021-09-10T17:27:45.987Z\",\"procedure_concept_id\":3014,\"procedure_source_value\":\"40304361\",\"procedure_synonym_id\":3014,\"provider_id\":\"3607\",\"life_id\":\"9015\",\"episode_id\":\"116188\"},{\"occurrence_at\":\"2021-09-10T17:27:49.987Z\",\"procedure_concept_id\":3742,\"procedure_source_value\":\"40316572\",\"procedure_synonym_id\":3742,\"provider_id\":\"3607\",\"life_id\":\"9015\",\"episode_id\":\"116188\"},{\"occurrence_at\":\"2021-09-10T17:27:58.000Z\",\"procedure_concept_id\":3074,\"procedure_source_value\":\"40305015\",\"procedure_synonym_id\":3074,\"provider_id\":\"3607\",\"life_id\":\"9015\",\"episode_id\":\"116188\"}]}",
+            "attributes": {
+                "ApproximateReceiveCount": "1",
+                "SentTimestamp": "1631299622537",
+                "SenderId": "AIDA2JP2BAOG3BXILZ7M5",
+                "ApproximateFirstReceiveTimestamp": "1631299622558"
+            },
+            "messageAttributes": {},
+            "md5OfBody": "b932fbeec8914a0b657fcfa717b558d9",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_export_isalab",
+            "awsRegion": "us-east-1"
+        }
+    ]
+}

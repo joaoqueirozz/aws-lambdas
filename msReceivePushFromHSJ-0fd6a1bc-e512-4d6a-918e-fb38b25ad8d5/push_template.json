@@ -1,0 +1,26 @@
+Samer chegou no Santa Joana: {
+    "payload": {
+        "nmPaciente": "Fulano de Tal",
+        "nrCpf": "12345678910",
+        "nrRegistro": "111755123",
+        "nrCns": "12345678910",
+        "dtNascimento": "1975-01-01",
+        "nmMae": "Fulana de Tal",
+        "nrIdParceiro": "4918565",
+        "nrAtendimento": "14842123",
+        "dtAtendimento": "21/02/2022 21:29:44",
+        "ieTipoMsg": 1
+    }
+Para interoperar: {
+        "payload": {
+            "nmPaciente": "Fulano de Tal",
+            "nrCpf": "12345678910",
+            "nrRegistro": "111755123",
+            "nrCns": "12345678910",
+            "dtNascimento": "1975-01-01",
+            "nmMae": "Fulana de Tal",
+            "nrIdParceiro": "4918565",
+            "nrAtendimento": "14842123",
+            "dtAlta": "21/02/2022 21:29:44",
+            "ieTipoMsg": 2
+        }

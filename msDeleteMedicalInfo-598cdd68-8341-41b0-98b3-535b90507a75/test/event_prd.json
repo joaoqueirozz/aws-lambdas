@@ -1,0 +1,19 @@
+{
+    "env": "prd",
+    "resourceType": "Patient",
+    "id": 26,
+    "db_schema": "datawarehouse",
+    "baseUrl": "https://n9im7t03ha.execute-api.us-east-1.amazonaws.com/production",
+    "db_connection": {
+        "host":"aqr-delta-rds.cluster-ctxsv2axpjoj.us-east-1.rds.amazonaws.com",
+        "port": 5432,
+        "database":"zeta_aqr_db",
+        "user": "camilo.raitz",
+        "password":"NbSOEkpIhioz"
+    },
+    "cacheConfig": {
+        "url": "redis://aqr-epsilon-etl-cache.qlpci5.0001.use1.cache.amazonaws.com:6379",
+        "db": 5,
+        "ttl": 3600    
+    }    
+}

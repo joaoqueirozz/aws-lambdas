@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The AWS CloudFormation template for this Serverless application
+Resources:
+  FuncLogGroup:
+    Type: "AWS::Logs::LogGroup"
+    Properties:
+      LogGroupName: /aws/lambda/msImportDocwayData
+  FuncLambdaFunction:
+    Type: "AWS::Lambda::Function"
+    Properties:
+      # Code:
+      #   S3Bucket: sami-fhir-omop
+      #   S3Key: >-
+      #     serverless/msImportDocwayData/dev/1620142127032-2021-05-04T15:28:47.032Z/msImportDocwayData.zip
+      Handler: index.handler
+      Runtime: nodejs12.x
+      FunctionName: msImportDocwayData
+      MemorySize: 2048
+      Timeout: 900
+      Description: Microservi?o que recebe os dados da Docway
+      Tags:
+        - Key: api
+          Value: ESBSamihealth
+      Role: "arn:aws:iam::707583345549:role/aqr-sigma-fhir-rds-role"
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-0619bafe5c30a779a
+        SubnetIds:
+          - subnet-0fc9788f19574469a
+          - subnet-0ce006726d826405a
+      Layers:
+        - "arn:aws:lambda:us-east-1:707583345549:layer:utils:47"
+        - "arn:aws:lambda:us-east-1:707583345549:layer:databaseOps:29"
+        - "arn:aws:lambda:us-east-1:707583345549:layer:got:1"
+        - "arn:aws:lambda:us-east-1:707583345549:layer:uuid:1"
+        - "arn:aws:lambda:us-east-1:707583345549:layer:pgknex:4"
+    DependsOn:
+      - FuncLogGroup
+  FuncLambdaVersionFqLQXDPgK81sv69ctrWSIs8pjAn6Hwu5eMfkzIjZC8o:
+    Type: "AWS::Lambda::Version"
+    DeletionPolicy: Retain
+    Properties:
+      FunctionName: !Ref FuncLambdaFunction
+      CodeSha256: 1vZlM2D3k/Cy44Ez3GbqHcRn09r5eAT+L9YdKWXN4QM=
+      Description: Microservi?o que recebe os dados da Docway
+Outputs:
+  ServerlessDeploymentBucketName:
+    Value: sami-fhir-omop
+  FuncLambdaFunctionQualifiedArn:
+    Description: Current Lambda function version
+    Value: !Ref FuncLambdaVersionFqLQXDPgK81sv69ctrWSIs8pjAn6Hwu5eMfkzIjZC8o

@@ -1,0 +1,23 @@
+{
+    "Records": [
+        {
+            "messageId": "383e40fc-93a6-4485-9501-0ecdef8a8e8a",
+            "receiptHandle": "AQEBCNvlYx6qlhK7XeYWpE60B883CuwqKVV8zz2P6aRjpJ6cpanr3x/ozyWtGEMmy31uSZX+kWQ9NGDACXZA3igdEfyCr6GjbeFTc5joooPgLjEND3zvjZWuha0ZVcd/MeXu4SfyRVmvuiszkwyql03ufBpK/htBv0vSWRXFIq92PYhNdJOVPFoQwB/VrVhZPvsWRCiGAEx+n3qJ2R1jbWBqZTl2jUYRWOIjbDcNdu/nnA0cSuvkg/lJYSAmeSeEh8/7vpjjGxSiAdbuatXpblkAB2NPu3oNhyc8+Hckzm8uFaA=",
+            "body": "{\"env\":\"hml\",\"base_url\":\"https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging/fhir\",\"schema\":\"datawarehouse_hml\",\"resourceType\":\"Coverage\",\"id\":\"2095\",\"modified\":\"2021-08-31T17:06:29.415Z\",\"messageId\":\"message-bundle-2095-1630429589415\",\"groupId\":\"hml-Bundle\",\"methodType\":\"create\",\"data\":{\"id\":2095,\"beneficiary\":{\"reference\":\"https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging/fhir/Patient/3614\",\"type\":\"Patient\"},\"period\":{\"end\":\"2022-09-02T00:00:00.000Z\",\"start\":\"2021-09-02T00:00:00.000Z\"},\"class\":[{\"extension\":[{\"valueReference\":{\"reference\":\"https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging/fhir/InsurancePlan/4\",\"type\":\"InsurancePlan\"},\"url\":\"./StructureDefinition/health-plan\"},{\"valueReference\":{\"reference\":\"https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging/fhir/Basic/6\",\"type\":\"Basic\"},\"url\":\"./StructureDefinition/grace-type\"}]}],\"contract\":[{\"reference\":\"https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging/fhir/Contract/1841\",\"type\":\"Contract\"}],\"extension\":[{\"valueCode\":\"1\",\"url\":\"./ValueSet/coverage-stop-reason\"},{\"valueCode\":\"1\",\"url\":\"./ValueSet/occupation-type\"},{\"valueCode\":\"1\",\"url\":\"./ValueSet/portability-type\"},{\"valueCode\":\"1\",\"url\":\"./ValueSet/contractor-type\"}],\"relationship\":{\"coding\":{\"code\":\"unknown\",\"display\":\"Desconhecido\"}},\"status\":\"active\",\"payor\":[{\"reference\":\"https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging/fhir/Organization/2250?organization_type=pay\",\"type\":\"Organization\"}],\"costToBeneficiary\":[{\"valueMoney\":{\"value\":\"0\",\"currency\":\"R$\"}}],\"identifier\":[{\"value\":\"5462100010001006351\",\"system\":\"./NamingSystem/cartao_plano_saude\"}],\"resourceType\":\"Coverage\"}}",
+            "attributes": {
+                "ApproximateReceiveCount": "4",
+                "SentTimestamp": "1630429594594",
+                "SequenceNumber": "18864134065312240640",
+                "MessageGroupId": "hml-Bundle",
+                "SenderId": "AROA2JP2BAOG2SWFTE7ZT:msIntegrationControl",
+                "MessageDeduplicationId": "383e40fc-93a6-4485-9501-0ecdef8a8e8a",
+                "ApproximateFirstReceiveTimestamp": "1630429594594"
+            },
+            "messageAttributes": {},
+            "md5OfBody": "9d5472ee1dacf03d471297cb2f0d310c",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:hml_export_mv_retry.fifo",
+            "awsRegion": "us-east-1"
+        }
+    ]
+  }

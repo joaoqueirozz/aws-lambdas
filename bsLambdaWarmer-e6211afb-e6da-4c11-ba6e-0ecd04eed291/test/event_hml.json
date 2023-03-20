@@ -1,0 +1,7 @@
+{
+    "env": "hml",
+    "resourceType": "Patient",
+    "id": 26,
+    "db_schema": "datawarehouse_hml",
+    "base_url": "https://b018fr965i.execute-api.us-east-1.amazonaws.com/staging"
+}

@@ -1,0 +1,23 @@
+{
+    "Records": [
+        {
+            "messageId": "82df96a8-5692-4414-8431-a257ed6d7abf",
+            "receiptHandle": "AQEBQFLDlW1QnqY2fswpM7Os4aRMHL2Exlegs+GaeHMHedJOrLnWwyV0jRPmH9CWf9SzXp41biGtsyXT9qi1y4wthlNrJcRdFijnewT+BE73lfobFI/HTSlfpMOcQWr6hpq59hCH7yYC015t+PiJEiab5Dl09EK8ETNStJ950XYu08mWS1jfWr/jIAKDQfwyiE8Okh4KyMPDUZ4DLm+3LkGr+dV0l7T99dDuIMa/k1FQ9aQNWAa8nrRoof1NgQZAjISt7eO5valFPUx0s7+eoXf9ew==",
+            "body": "{\"env\":\"dev\",\"base_url\":\"https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir\",\"resourceType\":\"Coverage\",\"id\":3638,\"messageId\":\"message-coverage-3209-1621444406367\",\"groupId\":\"dev-Contract-3210\",\"type\":null,\"schema\":\"datawarehouse_dev\",\"modified\":\"2021-05-19T17:13:26.367Z\",\"methodType\":\"update\",\"data\":{\"id\":3638,\"beneficiary\":{\"reference\":\"https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir/Patient/7584\",\"type\":\"Patient\"},\"period\":{\"end\":\"1998-01-01T22:00:00.000Z\",\"start\":\"1996-12-31T22:00:00.000Z\"},\"class\":[{\"extension\":[{\"valueReference\":{\"reference\":\"https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir/InsurancePlan/3\",\"type\":\"InsurancePlan\"},\"url\":\"./StructureDefinition/health-plan\"},{\"valueReference\":{\"reference\":\"https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir/Basic/1\",\"type\":\"Basic\"},\"url\":\"./StructureDefinition/grace-type\"}]}],\"contract\":[{\"reference\":\"https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir/Contract/3210\",\"type\":\"Contract\"}],\"extension\":[{\"valueDateTime\":\"2019-01-01T00:00:00.000Z\",\"url\":\"./StructureDefinition/occupation-end\"},{\"valueCode\":\"1\",\"url\":\"./ValueSet/coverage-stop-reason\"},{\"valueCode\":\"1\",\"url\":\"./ValueSet/contractors-relationship\"},{\"valueCode\":\"1\",\"url\":\"./ValueSet/occupation-type\"},{\"valueCode\":\"1\",\"url\":\"./ValueSet/portability-type\"},{\"valueBoolean\":true,\"url\":\"./StructureDefinition/contractor\"},{\"valueDateTime\":\"2020-11-27T00:00:00.000Z\",\"url\":\"./StructureDefinition/onboarding-date\"}],\"relationship\":{\"coding\":{\"code\":\"2\",\"display\":\"Cônjuge\"}},\"status\":\"active\",\"payor\":[{\"reference\":\"https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir/Organization/3968?organization_type=pay\",\"type\":\"Organization\"}],\"costToBeneficiary\":[{\"valueMoney\":{\"value\":\"299.59\",\"currency\":\"R$\"}}],\"resourceType\":\"Coverage\"}}",
+            "attributes": {
+                "ApproximateReceiveCount": "1",
+                "SentTimestamp": "1621444407165",
+                "SequenceNumber": "18861833841943792640",
+                "MessageGroupId": "dev-Contract-3210",
+                "SenderId": "AROA2JP2BAOG2SWFTE7ZT:msIntegrationControl",
+                "MessageDeduplicationId": "message-coverage-3209-1621444406367",
+                "ApproximateFirstReceiveTimestamp": "1621444407165"
+            },
+            "messageAttributes": {},
+            "md5OfBody": "166071d93d233227f4d97f81f5501d89",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_export_mv.fifo",
+            "awsRegion": "us-east-1"
+        }
+    ]
+}

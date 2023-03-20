@@ -1,0 +1,7 @@
+{
+  "entity": "lives",
+  "db_schema": "datawarehouse_dev",
+  "env": "dev",
+  "key": "document_identification_primary",
+  "value": 42974150039
+}

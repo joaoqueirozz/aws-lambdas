@@ -1,0 +1,7 @@
+{
+    "Records": [
+        {
+            "body": "{\n    \"env\": \"dev\",\n    \"db_schema\": \"datawarehouse_dev\",\n    \"base_url\": \"https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development/fhir\",\n    \"payload\": {\n        \"cdMpi\": \"60cd63db-b98b-410c-b159-887f16a8e8d7\",\n        \"nmPaciente\": \"Teste BP\",\n        \"nrCpf\": \"50361135009\",\n        \"nrRegistro\": \"170749678\",\n        \"nrCns\": \"70920827321083555\",\n        \"dtNascimento\": \"12/05/2000\",\n        \"nmMae\": \"Mãe do Teste BP\",\n        \"nrIdParceiro\": \"5468300010001008118\",\n        \"nrAtendimento\": \"14748706\",\n        \"dtConsentimento\": \"25/10/2021\",\n        \"ieTipoMsg\": \"2\"\n    }\n}"
+        }
+    ]
+}

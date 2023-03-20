@@ -1,0 +1,57 @@
+{
+    "env": "dev",
+    "db_schema": "datawarehouse_dev",
+    "base_url": "https://v51z3whrql.execute-api.us-east-1.amazonaws.com/development",
+    "payload": {
+        "resourceType": "Bundle",
+        "type": "transaction",
+        "entry": [
+            {
+                "fullUrl": "urn:uuid:af540602-7cf2-4b16-83f0-ac4605db85d7",
+                "resource": {
+                    "resourceType": "Group",
+                    "type": "person",
+                    "actual": true,
+                    "member": [
+                        {
+                            "entity": {
+                                "reference": "Patient/26",
+                                "type": "Patient"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "reference": "Patient/979",
+                                "type": "Patient"
+                            }
+                        },
+                        {
+                            "entity": {
+                                "reference": "Patient/980",
+                                "type": "Patient"
+                            }
+                        }
+                    ]
+                },
+                "request": {
+                    "method": "POST",
+                    "url": "Group"
+                }
+            },
+            {
+                "fullUrl": "urn:uuid:fe32cca1-a5bf-46c6-b2aa-d40b9a1c63e9",
+                "resource": {
+                    "resourceType": "CareTeam",
+                    "subject": {
+                        "reference": "Group/0",
+                        "type": "Group"
+                    }
+                },
+                "request": {
+                    "method": "PUT",
+                    "url": "CareTeam/175"
+                }
+            }
+        ]
+    }
+}

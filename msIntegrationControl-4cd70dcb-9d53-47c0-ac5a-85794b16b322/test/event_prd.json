@@ -1,0 +1,11 @@
+{
+  "env": "prd",
+  "base_url": "https://n9im7t03ha.execute-api.us-east-1.amazonaws.com/production/fhir",
+  "resourceType": "Coverage",
+  "id": "658432",
+  "messageId": "message-coverage-658432-1616442006999",
+  "groupId": "group-prd",
+  "type": null,
+  "schema": "datawarehouse",
+  "modified": "2021-03-22T19:40:06.999Z"
+}

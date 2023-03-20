@@ -1,0 +1,196 @@
+{
+    "id": 17517,
+    "patientId": "27d7a819-e4d8-4e55-bd64-44b8a7ce4c85",
+    "partnerId": 137,
+    "buyerId": "27d7a819-e4d8-4e55-bd64-44b8a7ce4c85",
+    "dateAppointment": "2021-07-07T09:15:00-03:00",
+    "createDate": "2021-07-07T09:10:25.987-03:00",
+    "type": 6,
+    "status": 7,
+    "address": {
+        "id": 29051,
+        "street": "Alameda Vicente Pinzon",
+        "number": "54",
+        "neighborhood": "Vila Olímpia",
+        "city": "São Paulo",
+        "state": "SP",
+        "isPrimary": false,
+        "country": "Brasil",
+        "fullAddress": "Alameda Vicente Pinzon, 54  - Vila Olímpia | São Paulo - SP"
+    },
+    "doctor": {
+        "id": "c30a263e-1cbe-47f0-b0c9-f377c1d6ace1",
+        "name": "Dr. Docway",
+        "crm": "32132",
+        "crmUF": "SC",
+        "gender": 1,
+        "specialties": [{
+                "id": 1,
+                "name": "Clínico Geral"
+            },
+            {
+                "id": 2,
+                "name": "Pediatria"
+            },
+            {
+                "id": 4,
+                "name": "Cardiologia"
+            },
+            {
+                "id": 6,
+                "name": "Psiquiatria"
+            }
+        ],
+        "profilePhotoUrl": "https://docwaystage.blob.core.windows.net/imgs/c30a263_637559933307391084.jpeg",
+        "isVideoOnline": false,
+        "activeForPartner": false,
+        "namePrefix": "Dra."
+    },
+    "medicalrecord": {
+        "appointmentId": 0,
+        "id": 3005,
+        "oldId": 0,
+        "personalHistory": {
+            "cids": [{
+                    "id": 754,
+                    "cod": "J44",
+                    "name": "Outras Doenças Pulmonares Obstrutivas Crônicas"
+                },
+                {
+                    "id": 755,
+                    "cod": "J45",
+                    "name": "Asma"
+                }
+            ]
+        },
+        "hypothesis": {
+            "cids": [{
+                "id": 755,
+                "cod": "J45",
+                "name": "Asma"
+            }]
+        },
+        "outcome": "Orientação",
+        "conductedExams": [
+
+        ],
+        "wasRemoved": false,
+        "mainSymptoms": [{
+                "id": 1,
+                "name": "Febre"
+            },
+            {
+                "id": 3,
+                "name": "Dor de cabeça"
+            },
+            {
+                "id": 4,
+                "name": "Dores abdominais"
+            }
+        ],
+        "createdDate": "2021-07-07T09:25:14.59-03:00",
+        "diseaseHistory": "Histórico da doença atual",
+        "personalHistoryDescription": "Outros Antecedentes",
+        "height": 1.8,
+        "weight": 110,
+        "bodyTemperature": 36.5,
+        "generalState": "Bom estado geral (BEG)",
+        "icterusPattern": "Ictérico",
+        "icterusPatternValue": "4+",
+        "pallorDegree": "Descorado",
+        "pallorDegreeValue": "4+",
+        "cyanosisPattern": "Cianótico",
+        "cyanosisPatternValue": "4+",
+        "respiratoryPattern": "Dispneico",
+        "respiratoryPatternValue": "4+",
+        "observation": "Outras observações",
+        "orientation": "Conduta",
+        "isEmergencyRoomReferred": false,
+        "isRemovalRequired": false,
+        "isCoordinatedCareReferred": false,
+        "coordinatedCareReferred": [
+
+        ],
+        "isHomeDoctorReferred": false,
+        "isControlledPrescription": false,
+        "prescriptions": [
+
+        ],
+        "needAccompaniment": false,
+        "compulsoryReportingDisease": "COVID-19",
+        "forwardings": [
+
+        ]
+    },
+    "buyer": {
+        "id": "27d7a819-e4d8-4e55-bd64-44b8a7ce4c85",
+        "dateOfBirth": "1993-03-15T00:00:00-03:00",
+        "healthInsuranceNumber": "02340063159",
+        "partnerId": 137,
+        "addresses": [
+
+        ],
+        "dependents": [
+
+        ],
+        "name": "Vinicius Reis",
+        "email": "vinicius.olreis@gmail.com",
+        "userName": "02340063159@137",
+        "phoneNumber": "11985077858",
+        "age": ", 28 ano(s)"
+    },
+    "requester": {
+        "id": "27d7a819-e4d8-4e55-bd64-44b8a7ce4c85",
+        "dateOfBirth": "1993-03-15T00:00:00-03:00",
+        "healthInsuranceNumber": "5462100010001008008",
+        "partnerId": 137,
+        "addresses": [
+
+        ],
+        "dependents": [
+
+        ],
+        "name": "Vinicius Reis",
+        "email": "vinicius.olreis@gmail.com",
+        "userName": "02340063159@137",
+        "phoneNumber": "11985077858",
+        "age": ", 28 ano(s)"
+    },
+    "specialty": {
+        "id": 1,
+        "name": "Clínico Geral"
+    },
+    "symptoms": [
+
+    ],
+    "requestDate": "2021-10-16T14:11:47.858969-03:00",
+    "doctorConfirmedDate": "2021-07-07T09:10:26.003-03:00",
+    "patientName": "Vinicius Reis",
+    "cancelIntervalInMinutes": 0,
+    "contactNumber": "+5511985077858",
+    "contactCode": "",
+    "exams": [
+
+    ],
+    "vaccines": [
+
+    ],
+    "gop": "",
+    "reason": "Queixa Inicial",
+    "roomName": "8a729c2d-6f02-4400-a89c-fa4642fc0cdd",
+    "confirmedDate": "0001-01-01T00:00:00-02:00",
+    "sellerFinalizedDate": "2021-07-07T09:30:31.43-03:00",
+    "sellerConfirmedDate": "2021-07-07T09:10:26.003-03:00",
+    "statusReason": "",
+    "needAccompaniment": false,
+    "mediaErrors": [
+
+    ],
+    "videoRoomLink": "https://link.docway.com.br/sEmZ",
+    "appointmentContabilized": true,
+    "doctorRating": "5",
+    "doctorComments": "Comentário Médico",
+    "patientRating": "",
+    "patientQualityRating": "",
+    "patientGoingToPS": ""
+}

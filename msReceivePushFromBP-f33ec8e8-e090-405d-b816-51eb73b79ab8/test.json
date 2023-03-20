@@ -1,0 +1,17 @@
+{
+    "env": "dev",
+    "db_schema": "datawarehouse_dev",
+    "payload": {
+        "cdMpi": "826f378d-9866-48cf-bcbd-082a2eb47912",
+        "nmPaciente": "Teste BP",
+        "nrCpf": "50361135009",
+        "nrRegistro": "170749678",
+        "nrCns": "70920827321083555",
+        "dtNascimento": "12/05/2000",
+        "nmMae": "Mãe do Teste BP",
+        "nrIdParceiro": "5468300010001008118",
+        "nrAtendimento": "14448538",
+        "dtConsentimento": "25/10/2021",
+        "ieTipoMsg": "2"
+    }
+}

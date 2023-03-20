@@ -1,0 +1,7 @@
+{
+  "user": "DBAMV",
+  "password": "Y$NP00@@",
+  "connectString": "10.0.2.6:1521/bdprod_pdb1.sub07291540470.redemv.oraclevcn.com",
+  "formatObject": true,
+  "queryData": "SELECT * FROM DBAPS.PLANO"
+}

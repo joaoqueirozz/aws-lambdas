@@ -1,0 +1,7 @@
+{
+    "Records": [
+        {
+            "body": "{\n    \"env\": \"prd\",\n    \"db_schema\": \"datawarehouse\",\n    \"base_url\": \"https://n9im7t03ha.execute-api.us-east-1.amazonaws.com/production/fhir\",\n    \"payload\": {\n        \"cdMpi\": \"ccaa37c9-a4ea-459e-82d7-90652d1d337c\",\n        \"nmPaciente\": \"Norberto de Araujo Fernandes\",\n        \"nrCpf\": \"06466051862\",\n        \"nrRegistro\": \"157977122\",\n        \"nrCns\": \"70920827321083555\",\n        \"dtNascimento\": \"12/05/2000\",\n        \"nmMae\": \"Mãe do Teste BP\",\n        \"nrIdParceiro\": \"4727925\",\n        \"nrAtendimento\": \"14995044\",\n        \"dtConsentimento\": \"25/10/2021\",\n        \"ieTipoMsg\": \"2\"\n    }\n}"
+        }
+    ]
+}

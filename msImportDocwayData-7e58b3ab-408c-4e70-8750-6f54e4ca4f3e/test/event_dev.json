@@ -1,0 +1,21 @@
+{
+    "Records": [{
+        "messageId": "fb5bd046-067b-4e2a-ac2f-5dbd818c01d2",
+        "receiptHandle": "AQEB1CpfIHftOMI476AGohmvFLIMJwI5fIuWEa69vVb352TXeoWPNWfKOOBfSa/cvOTh++EtoWCFER3KPAd4oFXW+dHKG2nFaixkT28W0A0KAYuBQVW1Lu0++CVi3oHVSXDwU9tf7lTnUYKihsz5SrQZrDvSyKJhq0Dp+ZQ8JiEIzOa9Cb2gJ4PPWQByQCou7G++rUGf69a/sX64iDcHTd92bbDB4aQIa9cAdD3vlwrvztPhsl1K7ksVo1+2OMbaEW2GxOcsKZWabBRFUOh0JHygdwDL++dSEQAkS0Kz4gsGeFU=",
+        "body": "{\n            \"env\": \"dev\",\n            \"db_schema\": \"datawarehouse_dev\",\n            \"payload\": {\n                \"eventType\": \"APPOINTMENT_FINISHED\",\n                \"date\": \"2021-04-22T14:37:28.1045114-03:00\",\n                \"resource\": {\n                    \"appointment\": 17517,\n                    \"type\": \"OMV\"\n                }\n            }\n        }",
+        "attributes": {
+            "ApproximateReceiveCount": "1",
+            "SentTimestamp": "1620149403124",
+            "SequenceNumber": "18861502320909295616",
+            "MessageGroupId": "dev-group-Appointment-1620149402525",
+            "SenderId": "AROA2JP2BAOG2EN7G67YD:msPushDocwayData",
+            "MessageDeduplicationId": "dev-message-Appointment-1620149402525",
+            "ApproximateFirstReceiveTimestamp": "1620149403124"
+        },
+        "messageAttributes": {},
+        "md5OfBody": "47a896297fd4c2564d925e774d030e48",
+        "eventSource": "aws:sqs",
+        "eventSourceARN": "arn:aws:sqs:us-east-1:707583345549:dev_import_docway.fifo",
+        "awsRegion": "us-east-1"
+    }]
+}

@@ -1,0 +1,7 @@
+{
+    "env": "prd",
+    "resourceType": "Patient",
+    "id": 26,
+    "db_schema": "datawarehouse",
+    "base_url": "https://n9im7t03ha.execute-api.us-east-1.amazonaws.com/production"
+}
